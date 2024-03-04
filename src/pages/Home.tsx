@@ -1,4 +1,4 @@
-import { BlogCTA, Customers, Footer, Hero, Navbar, NewsletterSignup } from '../components';
+import { BlogCTA, Customers, Footer, Hero, ImageMenu, Navbar, NewsletterSignup } from '../components';
 import ContentOne from '../components/ContentOne';
 import ServicesOne from '../components/ServicesOne';
 
@@ -13,6 +13,7 @@ const Home = () => {
         <Customers />
         <BlogCTA />
         <NewsletterSignup />
+        <ImageMenu />
         <Footer />
       </div>
     </>

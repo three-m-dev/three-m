@@ -1,19 +1,75 @@
+import { Link } from 'react-router-dom';
+
 const ImageMenu = () => {
-	return (
-		<div className="flex">
-			<div className="w-full">
-				<div className="aspect-w-16 aspect-h-9">
-					<img
-						src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d9?auto=format&fit=crop&w=800"
-						alt=""
-						className="object-cover"
-					/>
-				</div>
-			</div>
-			<div className="w-full aspect-video"></div>
-			<div className="w-full aspect-video"></div>
-		</div>
-	);
+  return (
+    <div className='flex flex-col md:flex-row'>
+      <Link
+        to='/services'
+        className='relative aspect-video'>
+        <img
+          src='https://as1.ftcdn.net/v2/jpg/06/26/65/92/1000_F_626659219_5AQy73NrVlPThEG1sdCfYNgiU9vB785Z.jpg'
+          className='absolute h-full w-full object-cover object-center'
+        />
+        <div className='absolute inset-0 bg-gray-900 opacity-50 transition-all duration-300'></div>
+
+        <h1 className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bebas text-5xl font-bold uppercase tracking-wider text-white'>
+          Services
+        </h1>
+      </Link>
+      <Link
+        to='/services'
+        className='relative aspect-video'>
+        <img
+          src='https://as1.ftcdn.net/v2/jpg/06/26/65/92/1000_F_626659219_5AQy73NrVlPThEG1sdCfYNgiU9vB785Z.jpg'
+          className='absolute h-full w-full object-cover object-center'
+        />
+        <div className='absolute inset-0 bg-gray-900 opacity-50 transition-all duration-300'></div>
+
+        <h1 className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bebas text-5xl font-bold uppercase tracking-wider text-white'>
+          Services
+        </h1>
+      </Link>
+      <Link
+        to='/services'
+        className='relative aspect-video'>
+        <img
+          src='https://as1.ftcdn.net/v2/jpg/06/26/65/92/1000_F_626659219_5AQy73NrVlPThEG1sdCfYNgiU9vB785Z.jpg'
+          className='absolute h-full w-full object-cover object-center'
+        />
+        <div className='absolute inset-0 bg-gray-900 opacity-50 transition-all duration-300'></div>
+
+        <h1 className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bebas text-5xl font-bold uppercase tracking-wider text-white'>
+          Services
+        </h1>
+      </Link>
+      {/* <Link
+        to='/careers'
+        className='relative  aspect-video'>
+        <img
+          src='/images/jose.jpg'
+          className='absolute h-full w-full object-cover object-center'
+        />
+        <div className='absolute inset-0 bg-gray-900 opacity-50'></div>
+
+        <h1 className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bebas text-5xl font-bold uppercase tracking-wider text-white'>
+          Careers
+        </h1>
+      </Link>
+      <Link
+        to='/contact'
+        className='relative h-[100vw] w-screen md:h-[33.33vw] lg:w-1/3'>
+        <img
+          src="/images.three-m-building.jpg"
+          className='absolute h-full w-full object-cover object-center'
+        />
+        <div className='absolute inset-0 bg-gray-900 opacity-50'></div>
+
+        <h1 className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bebas text-5xl font-bold uppercase tracking-wider text-white'>
+          Contact
+        </h1>
+      </Link> */}
+    </div>
+  );
 };
 
 export default ImageMenu;

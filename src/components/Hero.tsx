@@ -25,7 +25,7 @@ const Hero = () => {
       title: 'Quality Assurance in Every Build',
       cta: 'Learn More',
       url: '/link',
-      image: 'https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg',
+      image: '/images/caliper-on-print.jpg',
       imagePosition: 'object-center',
       alt: '',
       align: 'left',
