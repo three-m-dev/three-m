@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const Stats = () => {
   const animateValue = (target: number, setDisplayValue: React.Dispatch<React.SetStateAction<number>>) => {
-    const duration = 750;
+    const duration = 1000;
     let startValue = 0;
     const stepTime = 20;
     const steps = duration / stepTime;

@@ -87,7 +87,7 @@ const Timeline = () => {
                     (event.orientation === 'left' ? 'justify-start' : 'justify-end')
                   }>
                   <div className={'w-full sm:w-1/2 ' + (event.orientation === 'left' ? 'sm:pr-8' : 'sm:pl-8')}>
-                    <div className='rounded border-2 border-blue-200 bg-white p-4'>
+                    <div className='rounded border-2 border-primary bg-white p-4'>
                       <p className='mt-2 text-lg font-bold sm:mt-0 md:text-xl'>
                         {event.date} - {event.title}
                       </p>
