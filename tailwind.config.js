@@ -7,6 +7,10 @@ export default {
         primary: '#1b1464',
         secondary: '#08061D',
       },
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+        bebas: ['Bebas Neue', 'sans-serif'],
+      },
     },
   },
   plugins: [],
