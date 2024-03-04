@@ -5,7 +5,7 @@ const Banner = () => {
         src='/images/family-photo.jpg'
         className='absolute left-0 w-full h-full object-cover object-top z-0'
       />
-      <div className='absolute z-10 h-full w-full bg-black opacity-40'></div>
+      <div className='absolute z-10 h-full w-full bg-black opacity-0'></div>
     </section>
   );
 };

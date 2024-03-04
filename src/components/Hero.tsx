@@ -49,7 +49,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='relative flex h-[65vh] items-center justify-center'>
+    <div className='relative flex h-[65vh] max-w-screen items-center justify-center'>
       <img
         src={items[itemIndex].image}
         alt={items[itemIndex].alt}
@@ -62,7 +62,7 @@ const Hero = () => {
           className={`flex flex-col items-center gap-8 sm:w-2/5 ${items[itemIndex].align === 'right' && 'lg:ml-auto'} ${
             items[itemIndex].align === 'center' && 'lg:mx-auto'
           }`}>
-          <h1 className='text-center font-bebas text-5xl font-bold uppercase tracking-wider text-white text-wrap'>
+          <h1 className='text-center font-bebas text-3xl md:text-5xl font-bold uppercase tracking-wider text-white'>
             {items[itemIndex].title}
           </h1>
           <Link
