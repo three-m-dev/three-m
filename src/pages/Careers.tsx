@@ -1,8 +1,18 @@
 /* eslint-disable */
+import { useEffect } from 'react';
 import { CareerList, Footer, Navbar } from '../components';
+import { useGetCareers } from '../hooks/useGetCareers';
 
 const Careers = () => {
-  const careers = [];
+  const { getCareers, careers, error } = useGetCareers();
+
+  useEffect(() => {
+    getCareers();
+  }, []);
+
+  if (error) {
+    console.log(error);
+  }
 
   return (
     <>

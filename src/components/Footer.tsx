@@ -23,25 +23,25 @@ const Footer = () => {
               <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>Company</h2>
               <ul className='text-gray-600 dark:text-gray-400'>
                 <li className='mb-4'>
-                  <a
-                    href='https://flowbite.com'
+                  <Link
+                    to='/about'
                     className='hover:underline'>
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='https://tailwindcss.com/'
+                  <Link
+                    to='/services'
                     className='hover:underline'>
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href='https://tailwindcss.com/'
+                  <Link
+                    to='/careers'
                     className='hover:underline'>
                     Careers
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

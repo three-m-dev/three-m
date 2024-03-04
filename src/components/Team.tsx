@@ -16,9 +16,9 @@ const Team = () => {
               alt='Bonnie Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              <a href='#'>Bonnie Green</a>
+              <a href='#'>Sam Medwid</a>
             </h3>
-            <p>CEO/Co-founder</p>
+            <p>CEO</p>
           </div>
           <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
@@ -27,9 +27,9 @@ const Team = () => {
               alt='Helene Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              <a href='#'>Helene Engels</a>
+              <a href='#'>Jamie Headley</a>
             </h3>
-            <p>CTO/Co-founder</p>
+            <p>Integrator</p>
           </div>
           <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
@@ -38,9 +38,9 @@ const Team = () => {
               alt='Jese Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              <a href='#'>Jese Leos</a>
+              <a href='#'>Dan O'connell</a>
             </h3>
-            <p>SEO & Marketing</p>
+            <p>Operations Manager</p>
           </div>
           <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
@@ -49,9 +49,9 @@ const Team = () => {
               alt='Joseph Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              <a href='#'>Joseph Mcfall</a>
+              <a href='#'>Erika Miu</a>
             </h3>
-            <p>Sales</p>
+            <p>Finance Manager</p>
           </div>
           <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
@@ -60,9 +60,9 @@ const Team = () => {
               alt='Sofia Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              <a href='#'>Lana Byrd</a>
+              <a href='#'>Christine Brimer</a>
             </h3>
-            <p>Web Designer</p>
+            <p>Sales & Marketing Manager</p>
           </div>
           <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
@@ -71,11 +71,11 @@ const Team = () => {
               alt='Leslie Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              <a href='#'>Leslie Livingston</a>
+              <a href='#'>Joe Mattord</a>
             </h3>
-            <p>Graphic Designer</p>
+            <p>Quality Manager</p>
           </div>
-          <div className='text-center text-gray-500 dark:text-gray-400'>
+          {/* <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded-full'
               src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
@@ -85,8 +85,8 @@ const Team = () => {
               <a href='#'>Michael Gough</a>
             </h3>
             <p>React Developer</p>
-          </div>
-          <div className='text-center text-gray-500 dark:text-gray-400'>
+          </div> */}
+          {/* <div className='text-center text-gray-500 dark:text-gray-400'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded-full'
               src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png'
@@ -96,7 +96,7 @@ const Team = () => {
               <a href='#'>Neil Sims</a>
             </h3>
             <p>Vue.js Developer</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
