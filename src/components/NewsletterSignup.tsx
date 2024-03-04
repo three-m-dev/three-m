@@ -29,7 +29,7 @@ const NewsletterSignup = () => {
                   </svg>
                 </div>
                 <input
-                  className='block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500'
+                  className='block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 sm:rounded-none sm:rounded-l focus:ring-primary-500 focus:border-primary-500'
                   placeholder='Enter your email'
                   type='email'
                   id='email'
@@ -39,7 +39,7 @@ const NewsletterSignup = () => {
               <div>
                 <button
                   type='submit'
-                  className='py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300'>
+                  className='py-3 px-5 w-full text-sm font-medium text-center text-white rounded border cursor-pointer bg-primary border-primary sm:rounded-none sm:rounded-r hover:bg-primary-800 focus:ring-4 focus:ring-primary-300'>
                   Subscribe
                 </button>
               </div>
