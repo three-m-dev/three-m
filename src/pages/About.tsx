@@ -1,4 +1,4 @@
-import { Footer, Banner, Navbar, Stats, Timeline } from '../components';
+import { Footer, Banner, Navbar, Stats, Timeline, Team } from '../components';
 
 const About = () => {
   return (
@@ -8,6 +8,7 @@ const About = () => {
         <Banner />
         <Stats />
         <Timeline />
+        <Team />
         <Footer />
       </div>
     </>

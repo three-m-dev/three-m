@@ -6,10 +6,7 @@ const BlogGrid = () => {
       <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 '>
         <div className='mx-auto max-w-screen-sm text-center mb-8 lg:mb-16'>
           <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900'>Our Bulletin</h2>
-          <p className='font-light text-gray-500 lg:mb-16 sm:text-xl'>
-            Explore the whole collection of open-source web components and elements built with the utility classes from
-            Tailwind
-          </p>
+          <p className='font-light text-gray-500 lg:mb-16 sm:text-xl'>Catch up on our latest news and insights.</p>
         </div>
         <div className='grid gap-8 lg:grid-cols-2'>
           <article className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
@@ -20,18 +17,22 @@ const BlogGrid = () => {
                   fill='currentColor'
                   viewBox='0 0 20 20'
                   xmlns='http://www.w3.org/2000/svg'>
-                  <path d='M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z'></path>
+                  <path
+                    fill-rule='evenodd'
+                    d='M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z'
+                    clip-rule='evenodd'></path>
+                  <path d='M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z'></path>
                 </svg>
                 Update
               </span>
               <span className='text-sm'>14 days ago</span>
             </div>
             <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-              <a href='#'>How to quickly deploy a static website</a>
+              <Link to='/bulletin/1'>Trends and Innovations Shaping Our Industry</Link>
             </h2>
             <p className='mb-5 font-light text-gray-500'>
-              Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
-              tools that even influence both web designers and developers influence both web designers and developers.
+              Explore the cutting-edge trends and technological innovations driving the future of CNC machining, from
+              automation to advanced materials.
             </p>
             <div className='flex justify-between items-center'>
               <div className='flex items-center space-x-4'>
@@ -40,10 +41,10 @@ const BlogGrid = () => {
                   src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png'
                   alt='Jese Leos avatar'
                 />
-                <span className='font-medium'>Jese Leos</span>
+                <span className='font-medium'>Sam Medwid</span>
               </div>
-              <a
-                href='#'
+              <Link
+                to='/bulletin/1'
                 className='inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline'>
                 Read more
                 <svg
@@ -56,7 +57,7 @@ const BlogGrid = () => {
                     d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
                     clip-rule='evenodd'></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </article>
           <article className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
@@ -78,11 +79,11 @@ const BlogGrid = () => {
               <span className='text-sm'>14 days ago</span>
             </div>
             <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-              <a href='#'>Our first project with React</a>
+              <Link to='/bulletin/1'>Maximizing Efficiency: Tips for Streamlining Your CNC Machining Process</Link>
             </h2>
             <p className='mb-5 font-light text-gray-500'>
-              Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of
-              tools that even influence both web designers and developers influence both web designers and developers.
+              Discover practical tips and strategies to enhance your CNC machining process, improving efficiency and
+              reducing waste without compromising quality.
             </p>
             <div className='flex justify-between items-center'>
               <div className='flex items-center space-x-4'>
@@ -91,10 +92,10 @@ const BlogGrid = () => {
                   src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png'
                   alt='Bonnie Green avatar'
                 />
-                <span className='font-medium'>Bonnie Green</span>
+                <span className='font-medium'>Dave Husk</span>
               </div>
-              <a
-                href='#'
+              <Link
+                to='/bulletin/1'
                 className='inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline'>
                 Read more
                 <svg
@@ -107,7 +108,7 @@ const BlogGrid = () => {
                     d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
                     clip-rule='evenodd'></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </article>
         </div>

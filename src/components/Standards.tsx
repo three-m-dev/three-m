@@ -2,12 +2,10 @@ const Standards = () => {
   return (
     <section className='bg-white antialiased'>
       <div className='max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16'>
-        <div className='max-w-2xl mx-auto text-center'>
-          <h2 className='text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl'>
-            Our Commitment
-          </h2>
-          <p className='mt-4 text-base font-normal text-gray-500 sm:text-xl'>
-            Crafted with skill and care to help our clients grow their business!
+        <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
+          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'>Our Commitment</h2>
+          <p className='font-light text-gray-500 sm:text-xl dark:text-gray-400'>
+            Dedicated to excellence, every step of the way.
           </p>
         </div>
 
@@ -15,21 +13,22 @@ const Standards = () => {
           <div className='space-y-4'>
             <h3 className='text-2xl font-bold leading-tight text-gray-900'>Quality</h3>
             <p className='text-lg font-normal text-gray-500'>
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Delivering products that are both visually flawless and functionally impeccable. Excellence in every
+              detail.
             </p>
           </div>
 
           <div className='space-y-4'>
             <h3 className='text-2xl font-bold leading-tight text-gray-900'>Efficiency</h3>
             <p className='text-lg font-normal text-gray-500'>
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Prioritizing right-first-time processes. Leveraging technology and training for cost-effective solutions.
             </p>
           </div>
 
           <div className='space-y-4'>
             <h3 className='text-2xl font-bold leading-tight text-gray-900'>Delivery</h3>
             <p className='text-lg font-normal text-gray-500'>
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Meeting or beating deadlines, ensuring products reach customers promptly and as expected.
             </p>
           </div>
         </div>

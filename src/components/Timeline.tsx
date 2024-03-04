@@ -15,8 +15,8 @@ const Timeline = () => {
       ),
     },
     {
-      date: '2005',
-      title: 'Launched our first product.',
+      date: '1990',
+      title: 'Ultra Grip is born.',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet diam. Sed ac neque et nunc tempor ultricies. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt.',
       orientation: 'right',
@@ -44,7 +44,7 @@ const Timeline = () => {
     },
     {
       date: '2020',
-      title: 'Committed to sustainability.',
+      title: 'Committed to improvement',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet diam. Sed ac neque et nunc tempor ultricies. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt.',
       orientation: 'right',
@@ -70,18 +70,12 @@ const Timeline = () => {
   return (
     <section className='py-8 md:py-16'>
       <div className='mx-auto max-w-screen-xl px-4'>
-        <div className='mx-auto mb-8 max-w-4xl text-center'>
-          <span className='mb-4 inline-block rounded bg-blue-200 px-2 py-1 text-sm uppercase leading-5 text-primary'>
-            Timeline & Events
-          </span>
-          <h1 className='mb-4 font-bebas text-4xl font-bold leading-tight tracking-wide text-gray-800 md:text-5xl'>
-            Our Journey Over the Years
-          </h1>
-          <p className='text-lg font-medium text-gray-500 md:text-xl'>
-            Explore the key milestones and events that have shaped our company's history.
+        <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
+          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'>Our Timeline</h2>
+          <p className='font-light text-gray-500 sm:text-xl dark:text-gray-400'>
+            Explore the milestones that have shaped our journey.
           </p>
         </div>
-
         <div className='relative text-sm text-gray-700 antialiased'>
           <div className='absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform rounded bg-blue-200 sm:block'></div>
           {timelineEvents.map((event, index) => (
