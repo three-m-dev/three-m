@@ -62,7 +62,7 @@ const Hero = () => {
           className={`flex flex-col items-center gap-8 sm:w-2/5 ${items[itemIndex].align === 'right' && 'lg:ml-auto'} ${
             items[itemIndex].align === 'center' && 'lg:mx-auto'
           }`}>
-          <h1 className='text-center font-bebas text-3xl md:text-5xl font-bold uppercase tracking-wider text-white'>
+          <h1 className='text-center font-bebas text-3xl md:text-5xl uppercase tracking-wider text-white'>
             {items[itemIndex].title}
           </h1>
           <Link

@@ -2,7 +2,9 @@ const FAQs = () => {
   return (
     <section className='bg-white'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
-        <h2 className='mb-8 text-4xl tracking-tight font-extrabold text-gray-900'>Frequently asked questions</h2>
+        <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>
+          Frequently asked questions
+        </h2>
         <div className='grid pt-8 text-left border-t border-gray-200 md:gap-16 md:grid-cols-2'>
           <div>
             <div className='mb-10'>

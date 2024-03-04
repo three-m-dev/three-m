@@ -1,4 +1,6 @@
 const Stats = () => {
+  const animateFromZero = () => {};
+
   return (
     <section className='bg-primary'>
       <div className='max-w-screen-xl px-4 py-8 mx-auto text-center lg:px-6'>

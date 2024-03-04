@@ -71,10 +71,8 @@ const Timeline = () => {
     <section className='py-8 md:py-16'>
       <div className='mx-auto max-w-screen-xl px-4'>
         <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
-          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900'>Our Timeline</h2>
-          <p className='font-light text-gray-500 sm:text-xl'>
-            Explore the milestones that have shaped our journey.
-          </p>
+          <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Our Timeline</h2>
+          <p className='font-light text-gray-500 sm:text-xl'>Explore the milestones that have shaped our journey.</p>
         </div>
         <div className='relative text-sm text-gray-700 antialiased'>
           <div className='absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform rounded bg-blue-200 sm:block'></div>
