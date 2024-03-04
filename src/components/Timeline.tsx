@@ -2,9 +2,9 @@ const Timeline = () => {
   const timelineEvents = [
     {
       date: '1971',
-      title: 'Founded with a vision.',
+      title: 'Founded With A Vision',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet diam. Sed ac neque et nunc tempor ultricies. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt.',
+        'Three M Tool & Machine, started by two machinists and a salesman, grew into a significant industry player through determination and strategic expansions.',
       orientation: 'left',
       icon: (
         <path
@@ -16,9 +16,9 @@ const Timeline = () => {
     },
     {
       date: '1990',
-      title: 'Ultra Grip is born.',
+      title: 'Ultra Grip Is Born',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet diam. Sed ac neque et nunc tempor ultricies. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt.',
+        'Ultra-Grip Incorporated launched with a specialized line of improved "ball chucks," spearheaded by Chief Engineer Don Wrobel, who brought together designers in Traverse City to set up a dedicated workshop.',
       orientation: 'right',
       icon: (
         <path
@@ -29,8 +29,8 @@ const Timeline = () => {
       ),
     },
     {
-      date: '2015',
-      title: 'Focused on innovation.',
+      date: '2010',
+      title: 'Focused On Innovation',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet diam. Sed ac neque et nunc tempor ultricies. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt.',
       orientation: 'left',
@@ -44,9 +44,9 @@ const Timeline = () => {
     },
     {
       date: '2020',
-      title: 'Committed to improvement',
+      title: 'The Next Generation',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet diam. Sed ac neque et nunc tempor ultricies. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt. Nulla facilisi. Nullam et semper quam. Suspendisse potenti. Sed ut tellus et magna aliquam tincidunt.',
+        'Led by Sam Mediwd, son of an original founder, the company streamlined with EOS and new core values to innovate and thrive amid change.',
       orientation: 'right',
       icon: (
         <>
