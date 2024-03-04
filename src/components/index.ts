@@ -16,3 +16,4 @@ export { default as NewsletterSignup } from './NewsletterSignup';
 export { default as Stats } from './Stats';
 export { default as Standards } from './Standards';
 export { default as Testimonials } from './Testimonials';
+export { default as Timeline } from './Timeline';
