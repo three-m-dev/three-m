@@ -13,14 +13,14 @@ const ServicesOne = () => {
         </div>
         <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
           <div>
-            <div className='flex justify-center items-center mb-4 w-10 h-10 rounded bg-blue-200 text-primary lg:h-12 lg:w-12'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
                 strokeWidth={1.5}
                 stroke='currentColor'
-                className='w-6 h-6'>
+                className='w-5 h-5'>
                 <path
                   strokeLinecap='round'
                   strokeLinejoin='round'
@@ -39,10 +39,10 @@ const ServicesOne = () => {
             </p>
           </div>
           <div>
-            <div className='flex justify-center items-center mb-4 w-10 h-10 rounded bg-blue-200 text-primary lg:h-12 lg:w-12'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6'
+                className='h-5 w-5'
                 fill='currentColor'
                 viewBox='0 0 256 256'>
                 <path d='M165.66,194.34a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32,0l-32-32a8,8,0,0,1,11.32-11.32L120,212.69V43.31L101.66,61.66A8,8,0,0,1,90.34,50.34l32-32a8,8,0,0,1,11.32,0l32,32a8,8,0,0,1-11.32,11.32L136,43.31V212.69l18.34-18.35A8,8,0,0,1,165.66,194.34Z'></path>
@@ -54,10 +54,10 @@ const ServicesOne = () => {
             </p>
           </div>
           <div>
-            <div className='flex justify-center items-center mb-4 w-10 h-10 rounded bg-blue-200 text-primary lg:h-12 lg:w-12'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6'
+                className='h-5 w-5'
                 fill='currentColor'
                 viewBox='0 0 256 256'>
                 <path d='M237.66,133.66l-32,32a8,8,0,0,1-11.32-11.32L212.69,136H43.31l18.35,18.34a8,8,0,0,1-11.32,11.32l-32-32a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,11.32L43.31,120H212.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,237.66,133.66Z'></path>
@@ -69,10 +69,10 @@ const ServicesOne = () => {
             </p>
           </div>
           <div>
-            <div className='flex justify-center items-center mb-4 w-10 h-10 rounded bg-blue-200 text-primary lg:h-12 lg:w-12'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6'
+                className='h-5 w-5'
                 fill='currentColor'
                 viewBox='0 0 256 256'>
                 <path d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,16.37a86.4,86.4,0,0,1,16,3V212.67a86.4,86.4,0,0,1-16,3Zm32,9.26a87.81,87.81,0,0,1,16,10.54V195.83a87.81,87.81,0,0,1-16,10.54ZM40,128a88.11,88.11,0,0,1,80-87.63V215.63A88.11,88.11,0,0,1,40,128Zm160,50.54V77.46a87.82,87.82,0,0,1,0,101.08Z'></path>
@@ -84,10 +84,10 @@ const ServicesOne = () => {
             </p>
           </div>
           <div>
-            <div className='flex justify-center items-center mb-4 w-10 h-10 rounded bg-blue-200 text-primary lg:h-12 lg:w-12'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6'
+                className='h-5 w-5'
                 fill='currentColor'
                 viewBox='0 0 256 256'>
                 <path d='M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z'></path>
@@ -99,10 +99,10 @@ const ServicesOne = () => {
             </p>
           </div>
           <div>
-            <div className='flex justify-center items-center mb-4 w-10 h-10 rounded bg-blue-200 text-primary lg:h-12 lg:w-12'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6'
+                className='h-5 w-5'
                 fill='currentColor'
                 viewBox='0 0 256 256'>
                 <path d='M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z'></path>

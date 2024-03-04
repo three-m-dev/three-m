@@ -10,11 +10,11 @@ const Footer = () => {
           <div className='mb-6 md:mb-0'>
             <Link
               to='/'
-              className='flex items-center bg-white p-2 rounded justify-center md:justify-start'>
+              className='flex items-center bg-white p-2 pr-0 rounded justify-center md:justify-start'>
               <img
                 src='/images/three-m-logo-with-text.png'
                 className='mr-3 h-10'
-                alt='FlowBite Logo'
+                alt='Three M Logo'
               />
             </Link>
           </div>

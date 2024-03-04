@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
               <Link
                 to='/contact'
-                className='text-white bg-primary hover:bg-secondary focus:outline-none rounded px-4 py-2 text-center flex items-center uppercase font-semibold'>
+                className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
                 Contact
               </Link>
               <button

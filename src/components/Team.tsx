@@ -11,8 +11,8 @@ const Team = () => {
         <div className='grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Bonnie Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
@@ -22,8 +22,8 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Helene Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
@@ -33,8 +33,8 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Jese Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
@@ -44,8 +44,8 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Joseph Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
@@ -55,8 +55,8 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Sofia Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
@@ -66,8 +66,8 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Leslie Avatar'
             />
             <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
@@ -77,7 +77,7 @@ const Team = () => {
           </div>
           {/* <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
               src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
               alt='Michael Avatar'
             />
@@ -88,7 +88,7 @@ const Team = () => {
           </div> */}
           {/* <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded-full'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
               src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png'
               alt='Neil Avatar'
             />
