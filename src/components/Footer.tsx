@@ -13,7 +13,7 @@ const Footer = () => {
               className='flex items-center'>
               <img
                 src='/images/three-m-logo-with-text.png'
-                className='mr-3 h-8'
+                className='mr-3 h-10'
                 alt='FlowBite Logo'
               />
             </Link>
@@ -49,25 +49,27 @@ const Footer = () => {
               <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase'>Follow us</h2>
               <ul className='text-gray-600'>
                 <li className='mb-4'>
-                  <a
-                    href='https://github.com/themesberg/flowbite'
+                  <Link
+                    to='https://www.facebook.com/threemtoolandmachineinc'
+                    target='blank'
                     className='hover:underline '>
                     Facebook
-                  </a>
+                  </Link>
                 </li>
                 <li className='mb-4'>
-                  <a
-                    href='https://discord.gg/4eeurUVvTy'
+                  <Link
+                    to='https://www.linkedin.com/company/three-m-tool-&-machine-inc'
                     className='hover:underline'>
                     Linkedin
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href='https://discord.gg/4eeurUVvTy'
+                  <Link
+                    to='https://www.indeed.com/cmp/Three-M-Tool-&-Machine'
+                    target='blank'
                     className='hover:underline'>
                     Indeed
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -89,11 +91,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href='#'
+                  <Link
+                    to='/iso-9001-2015-certificate-of-registration.pdf'
+                    target='blank'
                     className='hover:underline'>
                     ISO 9001
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

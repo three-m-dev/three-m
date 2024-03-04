@@ -25,14 +25,14 @@ const Navbar = () => {
             className='flex items-center space-x-3 rtl:space-x-reverse'>
             <img
               src='/images/three-m-logo-with-text.png'
-              className='h-8'
+              className='h-10'
               alt='Three M Logo'
             />
           </Link>
           <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
             <Link
               to='/contact'
-              className='text-white bg-primary hover:bg-secondary focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center flex items-center'>
+              className='text-white bg-primary hover:bg-secondary focus:outline-none font-medium rounded-lg px-4 py-2 text-center flex items-center'>
               Contact Us
             </Link>
             <button
