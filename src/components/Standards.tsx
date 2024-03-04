@@ -3,10 +3,8 @@ const Standards = () => {
     <section className='bg-white antialiased'>
       <div className='max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16'>
         <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
-          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'>Our Commitment</h2>
-          <p className='font-light text-gray-500 sm:text-xl dark:text-gray-400'>
-            Dedicated to excellence, every step of the way.
-          </p>
+          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900'>Our Commitment</h2>
+          <p className='font-light text-gray-500 sm:text-xl'>Dedicated to excellence, every step of the way.</p>
         </div>
 
         <div className='grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3'>
