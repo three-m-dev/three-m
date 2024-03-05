@@ -7,7 +7,7 @@ const Hero = () => {
     {
       title: 'Innovation in Manufacturing',
       cta: 'Learn More',
-      url: '/link',
+      url: '/services',
       image: 'https://as1.ftcdn.net/v2/jpg/03/26/28/70/1000_F_326287003_HLZJZhT7l4v76OaqfMd1rjQDHldb0Wm8.jpg',
       alt: '',
       align: 'left',
@@ -15,7 +15,7 @@ const Hero = () => {
     {
       title: 'Seamless Production Flow',
       cta: 'Learn More',
-      url: '/link',
+      url: '/services',
       image: 'https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg',
       imagePosition: 'center',
       alt: '',
@@ -24,7 +24,7 @@ const Hero = () => {
     {
       title: 'Quality Assurance in Every Build',
       cta: 'Learn More',
-      url: '/link',
+      url: '/services',
       image: '/images/caliper-on-print.jpg',
       imagePosition: 'object-center',
       alt: '',
