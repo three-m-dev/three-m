@@ -10,6 +10,7 @@ import {
   Home,
   Login,
   NotFound,
+  PrivacyPolicy,
   Services,
 } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
@@ -59,6 +60,11 @@ const App = () => {
         <Route
           path='/dashboard/bulletin'
           element={<BulletinManager />}
+        />
+
+        <Route
+          path='/privacy-policy'
+          element={<PrivacyPolicy />}
         />
 
         <Route
