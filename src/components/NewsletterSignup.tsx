@@ -3,9 +3,7 @@ const NewsletterSignup = () => {
     <section className='bg-white'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
         <div className='mx-auto max-w-screen-md sm:text-center'>
-          <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>
-            Sign up for our newsletter
-          </h2>
+          <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Join Our Mailing List</h2>
           <p className='mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl'>
             Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with
             your email.
@@ -29,7 +27,7 @@ const NewsletterSignup = () => {
                   </svg>
                 </div>
                 <input
-                  className='block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 sm:rounded-none sm:rounded-l focus:ring-primary-500 focus:border-primary-500'
+                  className='block p-2 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded border-2 border-gray-300 sm:rounded-none sm:rounded-l focus:border-primary outline-none'
                   placeholder='Enter your email'
                   type='email'
                   id='email'
@@ -39,7 +37,7 @@ const NewsletterSignup = () => {
               <div>
                 <button
                   type='submit'
-                  className='py-3 px-5 w-full text-sm font-medium text-center text-white rounded border cursor-pointer bg-primary border-primary sm:rounded-none sm:rounded-r hover:bg-primary-800 focus:ring-4 focus:ring-primary-300'>
+                  className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded px-3 py-1.5 text-center flex items-center uppercase font-semibold sm:rounded-l-none'>
                   Subscribe
                 </button>
               </div>

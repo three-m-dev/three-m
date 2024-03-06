@@ -1,4 +1,30 @@
+import { useState } from 'react';
+
 const ContactForm = () => {
+  const [formFields, setFormFields] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = event.target.value;
+    const name = event.target.id;
+
+    setFormFields((prev) => {
+      return {
+        ...prev,
+        [name]: value,
+      };
+    });
+  };
+
+  const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    console.log(formFields);
+  };
+
   return (
     <section className='bg-white mt-16'>
       <div className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
@@ -7,7 +33,7 @@ const ContactForm = () => {
           Reach out for solutions and support.
         </p>
         <form
-          action='#'
+          onSubmit={handleSubmit}
           className='space-y-8'>
           <div>
             <label
@@ -18,8 +44,9 @@ const ContactForm = () => {
             <input
               type='email'
               id='email'
+              onChange={handleChange}
               className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5'
-              placeholder='name@flowbite.com'
+              placeholder='name@company.com'
               required
             />
           </div>
@@ -32,6 +59,7 @@ const ContactForm = () => {
             <input
               type='text'
               id='subject'
+              onChange={handleChange}
               className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500'
               placeholder='Let us know how we can help you'
               required
@@ -46,6 +74,7 @@ const ContactForm = () => {
             <textarea
               id='message'
               rows={6}
+              onChange={handleChange}
               className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500'
               placeholder='Leave a comment...'></textarea>
           </div>
@@ -57,7 +86,7 @@ const ContactForm = () => {
         </form>
       </div>
       <div className=' mx-auto max-w-screen-xl mb-16'>
-        <div className='flex flex-col-reverse gap-8 md:flex-row'>
+        <div className='flex flex-col gap-8 md:flex-row'>
           <div className='flex w-full flex-col items-center px-4 md:px-8'>
             <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary'>
               <svg
@@ -76,33 +105,7 @@ const ContactForm = () => {
             </div>
             <h3 className='text-2xl sm:text-3xl text-gray-900 font-bebas tracking-wider'>Email</h3>
             <div className='flex flex-col text-center font-medium text-gray-600 md:text-lg'>
-              <p>info@three-m.com</p>
               <p>sales@three-m.com</p>
-              <p>support@three-m.com</p>
-            </div>
-          </div>
-
-          <div className='flex w-full flex-col items-center px-4 md:px-8'>
-            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='h-5 w-5'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z'
-                />
-              </svg>
-            </div>
-            <h3 className='text-2xl sm:text-3xl text-gray-900 font-bebas tracking-wider'>Phone</h3>
-            <div className='flex flex-col text-center font-medium text-gray-600 md:text-lg'>
-              <p>+1 (248) 363 1555</p>
-              <p>Sales Ext. xxx</p>
-              <p>Quality Ext. xxx</p>
             </div>
           </div>
 
@@ -132,6 +135,28 @@ const ContactForm = () => {
               <p>8155 Richardson Rd</p>
               <p>Commerce Charter Township</p>
               <p>Michigan 48390</p>
+            </div>
+          </div>
+
+          <div className='flex w-full flex-col items-center px-4 md:px-8'>
+            <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-5 w-5'>
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z'
+                />
+              </svg>
+            </div>
+            <h3 className='text-2xl sm:text-3xl text-gray-900 font-bebas tracking-wider'>Phone</h3>
+            <div className='flex flex-col text-center font-medium text-gray-600 md:text-lg'>
+              <p>+1 (248) 363 1555</p>
             </div>
           </div>
         </div>

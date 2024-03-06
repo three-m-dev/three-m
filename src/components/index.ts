@@ -6,6 +6,8 @@ export { default as CareerList } from './CareerList';
 export { default as CareersTable } from './CareersTable';
 export { default as ContactForm } from './ContactForm';
 export { default as Customers } from './Customers';
+export { default as ContentOne } from './ContentOne';
+export { default as CoreValues } from './CoreValues';
 export { default as DashboardNavbar } from './DashboardNavbar';
 export { default as FAQs } from './FAQs';
 export { default as Footer } from './Footer';

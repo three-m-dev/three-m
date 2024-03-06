@@ -71,7 +71,7 @@ const Timeline = () => {
     <section className='py-8 md:py-16'>
       <div className='mx-auto max-w-screen-xl px-4'>
         <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
-          <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Our Timeline</h2>
+          <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Company History</h2>
           <p className='font-light text-gray-500 sm:text-xl'>Explore the milestones that have shaped our journey.</p>
         </div>
         <div className='relative text-sm text-gray-700 antialiased'>
@@ -87,7 +87,7 @@ const Timeline = () => {
                     (event.orientation === 'left' ? 'justify-start' : 'justify-end')
                   }>
                   <div className={'w-full sm:w-1/2 ' + (event.orientation === 'left' ? 'sm:pr-8' : 'sm:pl-8')}>
-                    <div className='rounded border-2 border-primary bg-white p-4'>
+                    <div className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
                       <p className='mt-2 text-lg font-bold sm:mt-0 md:text-xl'>
                         {event.date} - {event.title}
                       </p>

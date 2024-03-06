@@ -11,7 +11,7 @@ const Team = () => {
         <div className='grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Bonnie Avatar'
             />
@@ -22,7 +22,7 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Helene Avatar'
             />
@@ -33,7 +33,7 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Jese Avatar'
             />
@@ -44,7 +44,7 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Joseph Avatar'
             />
@@ -55,7 +55,7 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Sofia Avatar'
             />
@@ -66,7 +66,7 @@ const Team = () => {
           </div>
           <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://suebehaviouraldesign.com/wp-content/uploads/2019/11/Jeff_bezos.jpg'
               alt='Leslie Avatar'
             />
@@ -77,7 +77,7 @@ const Team = () => {
           </div>
           {/* <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
               alt='Michael Avatar'
             />
@@ -88,7 +88,7 @@ const Team = () => {
           </div> */}
           {/* <div className='text-center text-gray-500'>
             <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover'
+              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
               src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png'
               alt='Neil Avatar'
             />

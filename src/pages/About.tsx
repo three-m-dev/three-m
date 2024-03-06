@@ -1,4 +1,4 @@
-import { Footer, Banner, Navbar, Stats, Timeline, Team } from '../components';
+import { Footer, Banner, Navbar, Stats, Timeline, Team, CoreValues } from '../components';
 
 const About = () => {
   return (
@@ -7,6 +7,7 @@ const About = () => {
       <div className='mt-16'>
         <Banner />
         <Stats />
+        <CoreValues />
         <Timeline />
         <Team />
         <Footer />
