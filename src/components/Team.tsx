@@ -20,6 +20,7 @@ const Team = () => {
             </h3>
             <p>CEO</p>
           </div>
+
           <div className='text-center text-gray-500'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
@@ -31,6 +32,7 @@ const Team = () => {
             </h3>
             <p>Integrator</p>
           </div>
+
           <div className='text-center text-gray-500'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
@@ -42,6 +44,7 @@ const Team = () => {
             </h3>
             <p>Operations Manager</p>
           </div>
+
           <div className='text-center text-gray-500'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
@@ -53,6 +56,9 @@ const Team = () => {
             </h3>
             <p>Finance Manager</p>
           </div>
+
+          <div></div>
+
           <div className='text-center text-gray-500'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
@@ -64,6 +70,7 @@ const Team = () => {
             </h3>
             <p>Sales & Marketing Manager</p>
           </div>
+
           <div className='text-center text-gray-500'>
             <img
               className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
@@ -75,28 +82,8 @@ const Team = () => {
             </h3>
             <p>Quality Manager</p>
           </div>
-          {/* <div className='text-center text-gray-500'>
-            <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
-              alt='Michael Avatar'
-            />
-            <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
-              <a href='#'>Michael Gough</a>
-            </h3>
-            <p>React Developer</p>
-          </div> */}
-          {/* <div className='text-center text-gray-500'>
-            <img
-              className='mx-auto mb-4 w-36 h-36 rounded object-cover shadow-lg'
-              src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png'
-              alt='Neil Avatar'
-            />
-            <h3 className='mb-1 text-2xl font-bold tracking-tight text-gray-900'>
-              <a href='#'>Neil Sims</a>
-            </h3>
-            <p>Vue.js Developer</p>
-          </div> */}
+
+          <div></div>
         </div>
       </div>
     </section>
