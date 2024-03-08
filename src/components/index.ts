@@ -2,6 +2,7 @@ export { default as Banner } from './Banner';
 export { default as BlogCTA } from './BlogCTA';
 export { default as BlogGrid } from './BlogGrid';
 export { default as BlogPost } from './BlogPost';
+export { default as CareerContent } from './CareerContent';
 export { default as CareerList } from './CareerList';
 export { default as CareersTable } from './CareersTable';
 export { default as ContactForm } from './ContactForm';
