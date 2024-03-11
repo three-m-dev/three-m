@@ -36,10 +36,10 @@ const ResumeForm = () => {
       <div className='mx-auto max-w-screen-xl px-4 py-8 md:py-16'>
         <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
           <div className='flex flex-col items-center justify-center px-4 lg:col-span-2'>
-            <h1 className='mb-4 text-center font-bebas text-4xl font-bold leading-tight tracking-wider text-gray-800 md:text-5xl'>
+            <h1 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center'>
               Don't see a position that fits?
             </h1>
-            <p className='text-center text-lg font-medium text-gray-500 md:text-xl'>
+            <p className='font-light text-gray-500 lg:mb-16 sm:text-xl'>
               Send us your resume and we'll keep you in mind for future opportunities.
             </p>
           </div>

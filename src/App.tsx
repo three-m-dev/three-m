@@ -29,9 +29,10 @@ const App = () => {
           element={<About />}
         />
         <Route
-          path='/services'
+          path='/services/*'
           element={<Services />}
         />
+
         <Route
           path='/careers'
           element={<Careers />}
