@@ -59,8 +59,9 @@ const ServiceGrid = () => {
           </p>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
-          {services.map((service) => (
+          {services.map((service, index) => (
             <Card
+              key={index}
               title={service.title}
               path={service.path}
               imageOne={service.imageOne}

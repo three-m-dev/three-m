@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
   About,
-  Bulletin,
+  Blog,
   BulletinManager,
   BulletinPost,
   CareerManager,
@@ -32,18 +32,13 @@ const App = () => {
           path='/services/*'
           element={<Services />}
         />
-
-        <Route
-          path='/careers'
-          element={<Careers />}
-        />
         <Route
           path='/careers/*'
           element={<Careers />}
         />
         <Route
           path='/bulletin'
-          element={<Bulletin />}
+          element={<Blog />}
         />
         <Route
           path='/bulletin/*'

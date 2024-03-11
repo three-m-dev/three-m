@@ -23,6 +23,11 @@ export { default as Team } from './Team';
 export { default as Testimonials } from './Testimonials';
 export { default as Timeline } from './Timeline';
 
+// content
+export { default as BlogContent } from './content/BlogContent';
+export { default as CareerContent } from './content/CareerContent';
+export { default as ServiceContent } from './content/ServiceContent';
+
 // forms
 export { default as ApplicationForm } from './forms/ApplicationForm';
 export { default as ContactForm } from './forms/ContactForm';

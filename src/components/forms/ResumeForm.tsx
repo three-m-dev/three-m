@@ -36,9 +36,9 @@ const ResumeForm = () => {
       <div className='mx-auto max-w-screen-xl px-4 py-8 md:py-16'>
         <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
           <div className='flex flex-col items-center justify-center px-4 lg:col-span-2'>
-            <h1 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center'>
+            <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center'>
               Don't see a position that fits?
-            </h1>
+            </h2>
             <p className='font-light text-gray-500 lg:mb-16 sm:text-xl'>
               Send us your resume and we'll keep you in mind for future opportunities.
             </p>
@@ -48,7 +48,7 @@ const ResumeForm = () => {
             <form
               onSubmit={handleSubmit}
               className='flex flex-col p-4'>
-              <h2 className='text-center font-bebas text-3xl font-bold leading-tight tracking-wide text-white md:text-4xl'>
+              <h2 className='text-3xl text-white sm:text-5xl font-bebas tracking-wider text-center'>
                 Upload Resume
               </h2>
 
