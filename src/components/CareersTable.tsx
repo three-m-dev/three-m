@@ -141,11 +141,15 @@ const careers = [
   },
 ];
 
-const CareersTable = () => {
+type CareersTableProps = {
+  selectCareer: (career: number) => void;
+};
+
+const CareersTable = (props: CareersTableProps) => {
   const [createModalOpen, setCreateModalOpen] = useState(false);
   const [filterDropdownOpen, setFilterDropdownOpen] = useState(false);
   const [companyFilter, setCompanyFilter] = useState(0);
-  const [selectedCareer, setSelectedCareer] = useState(null);
+  const [selectedCareer, setSelectedCareer] = useState<number | null>(null);
 
   const filteredCareers = careers;
 
@@ -177,9 +181,9 @@ const CareersTable = () => {
                     viewBox='0 0 20 20'
                     xmlns='http://www.w3.org/2000/svg'>
                     <path
-                      fill-rule='evenodd'
+                      fillRule='evenodd'
                       d='M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z'
-                      clip-rule='evenodd'
+                      clipRule='evenodd'
                     />
                   </svg>
                 </div>
@@ -229,9 +233,9 @@ const CareersTable = () => {
                   viewBox='0 0 20 20'
                   fill='currentColor'>
                   <path
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z'
-                    clip-rule='evenodd'
+                    clipRule='evenodd'
                   />
                 </svg>
                 Filter
@@ -242,8 +246,8 @@ const CareersTable = () => {
                   xmlns='http://www.w3.org/2000/svg'
                   aria-hidden='true'>
                   <path
-                    clip-rule='evenodd'
-                    fill-rule='evenodd'
+                    clipRule='evenodd'
+                    fillRule='evenodd'
                     d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
                   />
                 </svg>
@@ -314,11 +318,17 @@ const CareersTable = () => {
           <div className='overflow-y-auto max-h-[calc(100vh-10rem)]'>
             <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
               <tbody>
-                {filteredCareers.map((career) => (
-                  <tr className='border-b dark:border-gray-700'>
+                {filteredCareers.map((career, index) => (
+                  <tr
+                    key={index}
+                    onClick={() => {
+                      setSelectedCareer(index);
+                      console.log(selectedCareer);
+                    }}
+                    className='border-b hover:cursor-pointer hover:bg-blue-100'>
                     <td
                       scope='row'
-                      className='px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white'>
+                      className='px-4 py-3 font-medium text-gray-900 whitespace-nowrap'>
                       {career.title}
                     </td>
                     <td className='px-4 py-3'>{career.employmentType}</td>

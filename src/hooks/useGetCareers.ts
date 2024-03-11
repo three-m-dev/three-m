@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { ICareerListing } from '../interfaces';
+import { ICareer } from '../interfaces';
 
 export const useGetCareers = () => {
-  const [careers, setCareers] = useState<ICareerListing[]>([]);
+  const [careers, setCareers] = useState<ICareer[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 

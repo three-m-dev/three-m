@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loading from './Loading';
-import { ICareerListing } from '../interfaces';
+import { ICareer } from '../interfaces';
 
 type Props = {
-  careerListings: ICareerListing[];
+  careerListings: ICareer[];
 };
 
 const CareerList = (props: Props) => {
@@ -13,7 +13,7 @@ const CareerList = (props: Props) => {
 
   const [typeFilter, setTypeFilter] = useState<'All' | 'Full Time' | 'Part Time' | 'Contract' | 'Internship'>('All');
 
-  const [filteredCareers, setFilteredCareers] = useState<ICareerListing[]>([]);
+  const [filteredCareers, setFilteredCareers] = useState<ICareer[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -133,7 +133,7 @@ const CareerList = (props: Props) => {
   };
 
   return (
-    <section className='bg-white'>
+    <section className='bg-white mt-16'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 '>
         <div className='mx-auto max-w-screen-sm text-center mb-8 lg:mb-16'>
           <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Career Openings</h2>
