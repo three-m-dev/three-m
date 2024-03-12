@@ -8,6 +8,7 @@ export { default as Home } from './Home';
 export { default as NotFound } from './NotFound';
 export { default as PrivacyPolicy } from './PrivacyPolicy';
 export { default as Services } from './Services';
+export { default as TermsAndConditions } from './TermsAndConditions';
 
 // Admin
 export { default as AccountManager } from './AccountManager';

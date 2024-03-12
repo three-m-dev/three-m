@@ -12,6 +12,7 @@ import {
   NotFound,
   PrivacyPolicy,
   Services,
+  TermsAndConditions,
 } from './pages';
 import ScrollToTop from './utils/ScrollToTop';
 
@@ -48,7 +49,6 @@ const App = () => {
           path='/contact'
           element={<Contact />}
         />
-
         <Route
           path='/dashboard/login'
           element={<Login />}
@@ -61,12 +61,14 @@ const App = () => {
           path='/dashboard/bulletin'
           element={<BulletinManager />}
         />
-
         <Route
           path='/privacy-policy'
           element={<PrivacyPolicy />}
         />
-
+        <Route
+          path='/terms-and-conditions'
+          element={<TermsAndConditions />}
+        />
         <Route
           path='*'
           element={<NotFound />}
