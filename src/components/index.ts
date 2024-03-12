@@ -11,13 +11,6 @@ export { default as Footer } from './Footer';
 export { default as Hero } from './Hero';
 export { default as ImageMenu } from './ImageMenu';
 export { default as Navbar } from './Navbar';
-export { default as ServiceDetails } from './ServiceDetails';
-export { default as Testimonials } from './Testimonials';
-
-// content
-export { default as BlogContent } from './content/BlogContent';
-export { default as CareerContent } from './content/CareerContent';
-export { default as ServiceContent } from './content/ServiceContent';
 
 // forms
 export { default as ApplicationForm } from './forms/ApplicationForm';
@@ -28,7 +21,3 @@ export { default as ResumeForm } from './forms/ResumeForm';
 export { default as BlogPost } from './reusable/BlogPost';
 export { default as Card } from './reusable/Card';
 export { default as Table } from './reusable/Table';
-
-// extra
-export { default as Customers } from './extra/Customers';
-export { default as Team } from './extra/Team';
