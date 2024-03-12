@@ -17,12 +17,12 @@ const ContentOne = () => {
         </div>
         <div className='grid grid-cols-2 gap-4 mt-8'>
           <img
-            className='w-full h-96 object-cover'
+            className='w-full h-96 object-cover rounded-md shadow-md'
             src='/images/21.png'
             alt='office content 1'
           />
           <img
-            className='mt-4 w-full h-96 object-cover lg:mt-10'
+            className='mt-4 w-full h-96 object-cover lg:mt-10 rounded-md shadow-md'
             src='https://www.shutterstock.com/shutterstock/photos/1432126148/display_1500/stock-photo-milling-tools-in-cnc-machine-chop-1432126148.jpg'
             alt='office content 2'
           />

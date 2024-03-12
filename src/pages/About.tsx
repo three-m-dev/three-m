@@ -3,20 +3,31 @@ import { Footer, Navbar } from '../components';
 
 const values = [
   {
-    name: 'Give a Shit',
-    points: ['Take pride in what we do​', 'Transparency', 'Ethical Standards'],
+    title: 'Give a Shit',
+    points: [
+      'Take pride in what we do​',
+      'Ensure our own success by first striving to make others successful​',
+      // 'Be aware of our impact on those around us and the world, and how it reflects on us and our community',
+    ],
   },
   {
-    name: 'Create Solutions',
-    points: ['Quality', 'Innovation', 'Continuous Improvement'],
+    title: 'Create Solutions',
+    points: [
+      'The world is a messy place ​',
+      'Perfection is only a concept ​',
+      'Its one thing to look pretty, its another to get the job done',
+    ],
   },
   {
-    name: 'Be Versatile',
-    points: ['Accountability', 'Sustainability', 'Community'],
+    title: 'Be Versatile',
+    points: [
+      'The world is always changing and so are we​',
+      'Communicate to create more effective and productive relationships​',
+    ],
   },
   {
-    name: 'Have Fun',
-    points: ['Collaboration', 'Respect', 'Diversity'],
+    title: 'Have Fun',
+    points: ['A smile goes a long way​', 'Don’t be serious, be sincere​', 'Enjoy coming to work every day!'],
   },
 ];
 
@@ -118,18 +129,22 @@ const About = () => {
               <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Core Values</h2>
               <p className='font-light text-gray-500 sm:text-xl'>The underlying values of our organization.</p>
             </div>
-            <div className='grid grid-cols-2 gap-6'>
+
+            <div className='space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-10 lg:space-y-0'>
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
-                  <h2 className='text-xl font-semibold mb-2'>{value.name}</h2>
-                  <ul className='text-gray-600'>
-                    {value.points.map((point, idx) => (
+                  className='flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow-md xl:p-8'>
+                  <h3 className='mb-4 text-3xl font-bebas '>{value.title}</h3>
+                  <p className='font-light text-gray-500 sm:text-lg'></p>
+                  <ul
+                    role='list'
+                    className='space-y-4 text-left flex flex-col items-center'>
+                    {value.points.map((point, index) => (
                       <li
-                        key={idx}
-                        className='mt-1'>
-                        {point}
+                        key={index}
+                        className='flex r space-x-3 text-center'>
+                        <span>{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -143,21 +158,19 @@ const About = () => {
         <section className='bg-white'>
           <div className='gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'>
             <div className='font-light text-gray-500 sm:text-lg'>
-              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>
-                Three M Mission Statement
-              </h2>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Mission Statement</h2>
               <p className='mb-4'>
                 Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
               </p>
             </div>
             <div className='grid grid-cols-2 gap-4 mt-8'>
               <img
-                className='w-full h-96 object-cover'
-                src='/images/21.png'
+                className='w-full h-96 object-cover object-left rounded-md shadow-md'
+                src='/images/mike_medwid.jpg'
                 alt='office content 1'
               />
               <img
-                className='mt-4 w-full h-96 object-cover lg:mt-10'
+                className='mt-4 w-full h-96 object-cover lg:mt-10 rounded-md shadow-md'
                 src='https://www.shutterstock.com/shutterstock/photos/1432126148/display_1500/stock-photo-milling-tools-in-cnc-machine-chop-1432126148.jpg'
                 alt='office content 2'
               />

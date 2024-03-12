@@ -11,7 +11,7 @@ const Card = (props: CardProps) => {
   return (
     <Link
       to={props.path}
-      className='group block overflow-hidden bg-gray-200 shadow-lg'>
+      className='group block overflow-hidden bg-gray-200 shadow-lg rounded-md'>
       <div className='relative aspect-square flex items-center justify-center overflow-clip'>
         <div className='absolute h-full w-full bg-black z-40 opacity-30'></div>
         <img

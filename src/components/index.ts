@@ -12,7 +12,6 @@ export { default as Hero } from './Hero';
 export { default as ImageMenu } from './ImageMenu';
 export { default as Navbar } from './Navbar';
 export { default as ServiceDetails } from './ServiceDetails';
-export { default as Standards } from './Standards';
 export { default as Testimonials } from './Testimonials';
 
 // content
