@@ -7,7 +7,6 @@ const values = [
     points: [
       'Take pride in what we do​',
       'Ensure our own success by first striving to make others successful​',
-      // 'Be aware of our impact on those around us and the world, and how it reflects on us and our community',
     ],
   },
   {
