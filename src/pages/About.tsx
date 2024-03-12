@@ -4,10 +4,7 @@ import { Footer, Navbar } from '../components';
 const values = [
   {
     title: 'Give a Shit',
-    points: [
-      'Take pride in what we do​',
-      'Ensure our own success by first striving to make others successful​',
-    ],
+    points: ['Take pride in what we do​', 'Ensure our own success by first striving to make others successful​'],
   },
   {
     title: 'Create Solutions',
@@ -34,13 +31,13 @@ const events = [
   {
     date: '1971',
     title: 'Brightmoor Beginnings: The Early Days',
-    thumbnail: '',
-    content: '',
+    thumbnail: '/images/0.png',
+    content: `In 1971, the Brightmoor neighborhood of Detroit witnessed the birth of Three M Tool & Machine. Founded by two machinists and a salesman, all sharing a commonality with their "M" last names, they began their journey with just one turning machine. At a time when the "Tool & Die Trade" was believed to be fading in Detroit, these founders defied expectations. Among them was San Miyamoto, whose determination to join the Detroit Police Department despite height challenges became a testament to their resilience. Although he never made the cut due to strict height requirements, San's story of perseverance and creativity not only caught the nation's attention but also underscored the founding spirit of Three M. This blend of ingenuity and grit propelled the company forward, marking the start of an enterprise that would grow beyond its humble beginnings.`,
   },
   {
     date: '1977',
     title: 'A New Chapter in Richardson',
-    thumbnail: '',
+    thumbnail: '/images/25.png',
     content: '',
   },
   {
@@ -70,7 +67,7 @@ const events = [
   {
     date: '2006',
     title: 'Riding the Wind: The Surge of Wind Energy',
-    thumbnail: '',
+    thumbnail: '/images/23.png',
     content: '',
   },
   {
@@ -209,7 +206,7 @@ const About = () => {
 
         {/* History */}
         <section className='py-8 md:py-16'>
-          <div className='mx-auto max-w-screen-xl px-4'>
+          <div className='mx-auto max-w-screen-lg px-4'>
             <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
               <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Company History</h2>
               <p className='font-light text-gray-500 sm:text-xl'>
@@ -242,23 +239,10 @@ const About = () => {
                       </svg>
                     </button>
                   </h2>
-                  <div
-                    id='accordion-flush-body-1'
-                    className={activeEvent === index ? 'block' : 'hidden'}>
-                    <div className='py-5 border-b border-gray-200'>
-                      <p className='mb-2 text-gray-500'>
-                        Flowbite is an open-source library of interactive components built on top of Tailwind CSS
-                        including buttons, dropdowns, modals, navbars, and more.
-                      </p>
-                      <p className='text-gray-500'>
-                        Check out this guide to learn how to{' '}
-                        <a
-                          href='/docs/getting-started/introduction/'
-                          className='text-blue-600 hover:underline'>
-                          get started
-                        </a>{' '}
-                        and start developing websites even faster with components on top of Tailwind CSS.
-                      </p>
+                  <div className={activeEvent === index ? 'block' : 'hidden'}>
+                    <div className='py-6 border-b border-gray-200 flex gap-6'>
+                      <p className='indent-8 mb-2 text-gray-500 w-1/2'>{event.content}</p>
+                      <img src={event.thumbnail} className='w-1/2' />
                     </div>
                   </div>
                 </div>

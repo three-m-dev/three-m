@@ -33,65 +33,72 @@ const Contact = () => {
       <div className='mt-16'>
         {/* Contact Form */}
         <section className='bg-white'>
-          <div className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
+          <div className='py-8 lg:py-16 px-4 mx-auto max-w-screen-xl'>
             <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center'>
               Contact Us
             </h2>
             <p className='mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl'>
               Reach out for solutions and support.
             </p>
-            <form
-              onSubmit={handleSubmit}
-              className='space-y-8'>
-              <div>
-                <label
-                  htmlFor='email'
-                  className='block mb-2 text-sm font-medium text-gray-900'>
-                  Your email
-                </label>
-                <input
-                  type='email'
-                  id='email'
-                  onChange={handleChange}
-                  className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5'
-                  placeholder='name@company.com'
-                  required
-                />
+            <div className='flex flex-col lg:flex-row justify-between items-start lg:items-stretch gap-6'>
+              <div className='lg:w-1/2 bg-gray-300 rounded-md shadow-md hidden lg:block'>
+                <p className='text-gray-700 text-center flex items-center justify-center h-full'>
+                  Google Map Placeholder
+                </p>
               </div>
-              <div>
-                <label
-                  htmlFor='subject'
-                  className='block mb-2 text-sm font-medium text-gray-900'>
-                  Subject
-                </label>
-                <input
-                  type='text'
-                  id='subject'
-                  onChange={handleChange}
-                  className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500'
-                  placeholder='Let us know how we can help you'
-                  required
-                />
-              </div>
-              <div className='sm:col-span-2'>
-                <label
-                  htmlFor='message'
-                  className='block mb-2 text-sm font-medium text-gray-900'>
-                  Your message
-                </label>
-                <textarea
-                  id='message'
-                  rows={6}
-                  onChange={handleChange}
-                  className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500'
-                  placeholder='Leave a comment...'></textarea>
-              </div>
-              <button
-                type='submit'
-                className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
-                Send message
-              </button>
-            </form>
+              <form
+                onSubmit={handleSubmit}
+                className='lg:w-1/2 space-y-8'>
+                <div>
+                  <label
+                    htmlFor='email'
+                    className='block mb-2 text-sm font-medium text-gray-900'>
+                    Your email
+                  </label>
+                  <input
+                    type='email'
+                    id='email'
+                    onChange={handleChange}
+                    className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5'
+                    placeholder='name@company.com'
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor='subject'
+                    className='block mb-2 text-sm font-medium text-gray-900'>
+                    Subject
+                  </label>
+                  <input
+                    type='text'
+                    id='subject'
+                    onChange={handleChange}
+                    className='block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500'
+                    placeholder='Let us know how we can help you'
+                    required
+                  />
+                </div>
+                <div className='sm:col-span-2'>
+                  <label
+                    htmlFor='message'
+                    className='block mb-2 text-sm font-medium text-gray-900'>
+                    Your message
+                  </label>
+                  <textarea
+                    id='message'
+                    rows={6}
+                    onChange={handleChange}
+                    className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500'
+                    placeholder='Leave a comment...'></textarea>
+                </div>
+                <button
+                  type='submit'
+                  className='text-white bg-primary hover:bg-primary-700 hover:text-white border border-primary transition ease-in-out duration-300 focus:outline-none rounded px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
+                  Send message
+                </button>
+              </form>
+            </div>
           </div>
         </section>
 
