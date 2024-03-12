@@ -1,4 +1,4 @@
-import { BlogGrid, Footer, Navbar, NewsletterForm } from '../components';
+import { BlogGrid, Footer, Navbar } from '../components';
 
 const Blog = () => {
   return (
@@ -6,7 +6,6 @@ const Blog = () => {
       <Navbar />
       <div className='mt-16'>
         <BlogGrid />
-        <NewsletterForm />
         <Footer />
       </div>
     </>

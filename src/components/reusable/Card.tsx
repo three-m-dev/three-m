@@ -13,6 +13,7 @@ const Card = (props: CardProps) => {
       to={props.path}
       className='group block overflow-hidden bg-gray-200 shadow-lg'>
       <div className='relative aspect-square flex items-center justify-center overflow-clip'>
+        <div className='absolute h-full w-full bg-black z-40 opacity-30'></div>
         <img
           src={props.imageOne}
           alt=''
@@ -25,7 +26,7 @@ const Card = (props: CardProps) => {
           className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
         />
 
-        <h3 className='text-white text-3xl sm:text-3xl uppercase font-bebas tracking-wider absolute text-center'>
+        <h3 className='text-white text-3xl sm:text-4xl uppercase font-bebas tracking-wider absolute text-center z-50'>
           {props.title}
         </h3>
       </div>

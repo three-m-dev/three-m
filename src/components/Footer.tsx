@@ -17,6 +17,9 @@ const Footer = () => {
                 alt='Three M Logo'
               />
             </Link>
+            {/* <Link to=''>
+              <img src='/images/iso_9001_2015.png' className='h-20'></img>
+            </Link> */}
           </div>
           <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3'>
             <div>
@@ -50,25 +53,25 @@ const Footer = () => {
               <ul className='text-gray-200'>
                 <li className='mb-4'>
                   <Link
-                    to='https://www.facebook.com/threemtoolandmachineinc'
-                    target='blank'
-                    className='hover:underline '>
-                    Facebook
-                  </Link>
-                </li>
-                <li className='mb-4'>
-                  <Link
                     to='https://www.linkedin.com/company/three-m-tool-&-machine-inc'
                     className='hover:underline'>
                     Linkedin
                   </Link>
                 </li>
-                <li>
+                <li className='mb-4'>
                   <Link
                     to='https://www.indeed.com/cmp/Three-M-Tool-&-Machine'
                     target='blank'
                     className='hover:underline'>
                     Indeed
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to='https://www.facebook.com/threemtoolandmachineinc'
+                    target='blank'
+                    className='hover:underline '>
+                    Facebook
                   </Link>
                 </li>
               </ul>
@@ -95,7 +98,7 @@ const Footer = () => {
                     to='/iso-9001-2015-certificate-of-registration.pdf'
                     target='blank'
                     className='hover:underline'>
-                    ISO 9001
+                    ISO 9001:2015
                   </Link>
                 </li>
               </ul>
