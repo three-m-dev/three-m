@@ -21,7 +21,6 @@ export { default as ServiceContent } from './content/ServiceContent';
 
 // forms
 export { default as ApplicationForm } from './forms/ApplicationForm';
-export { default as ContactForm } from './forms/ContactForm';
 export { default as NewsletterForm } from './forms/NewsletterForm';
 export { default as ResumeForm } from './forms/ResumeForm';
 
