@@ -1,5 +1,13 @@
 import { useState } from 'react';
 import { Footer, Navbar } from '../components';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
+let apiKey = 'AIzaSyAw-AhO7G8k28QZ39WkA_YnV_oychAIySw';
+
+const position = {
+  lat: 42.57722473144531,
+  lng: -83.4441909790039,
+};
 
 const Contact = () => {
   const [formFields, setFormFields] = useState({
@@ -41,11 +49,7 @@ const Contact = () => {
               Reach out for solutions and support.
             </p>
             <div className='flex flex-col-reverse lg:flex-row justify-between items-start lg:items-stretch gap-6 transition-all'>
-              <div className='w-full lg:w-1/2 bg-gray-300 rounded-md shadow-md lg:block'>
-                <p className='text-gray-700 text-center flex items-center justify-center min-h-96 h-full'>
-                  Google Map Placeholder
-                </p>
-              </div>
+              <div className='w-full lg:w-1/2 bg-gray-300 rounded-md shadow-md lg:block min-h-96'></div>
               <form
                 onSubmit={handleSubmit}
                 className='w-full lg:w-1/2 space-y-8'>
