@@ -30,7 +30,7 @@ const values = [
 const events = [
   {
     date: '1971',
-    title: `TESTING`,
+    title: `Brightmoor's First Spark`,
     thumbnail: '/images/0.png',
     content: `
 Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by two machinists and a salesman, all with "M" last names. Starting with one turning machine, they thrived in the declining "Tool & Die Trade." Co-founder San Miyamoto's attempt to join the Detroit Police, thwarted by height requirements, symbolized their perseverance. This spirit of resilience and creativity fueled the company's growth from its modest start.`,
