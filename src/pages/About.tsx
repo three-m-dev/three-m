@@ -33,68 +33,67 @@ const events = [
     title: `Brightmoor's First Spark`,
     thumbnail: '/images/0.png',
     content: `
-In 1971, Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by two machinists and a salesman, all with "M" last names. Starting with one turning machine, they thrived in the declining "Tool & Die Trade." Co-founder San Miyamoto's attempt to join the Detroit Police, thwarted by height requirements, symbolized their perseverance. This spirit of resilience and creativity fueled the company's growth from its modest start.`,
+Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by two machinists and a salesman, all with "M" last names. Starting with one turning machine, they thrived in the declining "Tool & Die Trade." Co-founder San Miyamoto's attempt to join the Detroit Police, thwarted by height requirements, symbolized their perseverance. This spirit of resilience and creativity fueled the company's growth from its modest start.`,
   },
   {
     date: '1974',
     title: 'Milestone: Unveiling the Mill',
     thumbnail: '/images/31.png',
-    content: `In 1974, Three M Tool & Machine celebrated a pivotal moment with the acquisition of a Devlieg 3B, a testament to enduring craftsmanship dating back to the '30s or '40s. This first boring mill not only marked a significant expansion of our capabilities but also connected us to a legacy of precision engineering, standing as a centerpiece of innovation and history in our facility for decades.`,
+    content: `The company celebrated a pivotal moment with the acquisition of a Devlieg 3B, a testament to enduring craftsmanship dating back to the '30s or '40s. This first boring mill not only marked a significant expansion of our capabilities but also connected us to a legacy of precision engineering, standing as a centerpiece of innovation and history in our facility for decades.`,
   },
   {
     date: '1977',
     title: `Richardson Rises`,
     thumbnail: '/images/25.png',
-    content: `
-Three M Tool & Machine's expansion didn't slow down, thanks in part to robust partnerships with local GM plants. Space became a premium once again, leading to a timely opportunity as new buildings were rising on Richardson Rd. Our growth was mirrored by our surroundings, with our landlord constructing additions to accommodate us. Eventually, we made a permanent mark by purchasing the land and buildings, establishing our longstanding headquarters at this very location.`,
+    content: `Three M Tool & Machine, spurred by growth and partnerships with GM, relocated to a new headquarters on Richardson Rd, securing our long-term base. This move, reflecting our dynamic expansion, has seen us evolve into a key supplier across diverse sectors, from oil field to pharmaceuticals.`,
   },
   {
     date: '1990',
     title: 'Ultra Grip is Born',
     thumbnail: '/images/30.png',
-    content: '',
+    content: `Born from innovation and collaboration, Ultra Grip emerged under the leadership of Ken Cross and Chief Engineer Don Wrobel. Specializing in work-holding solutions, our journey began with enhanced 'ball chucks' and a talented team in Traverse City. Transitioning to 'International' reflects our global outlook and commitment to excellence.`,
   },
   {
     date: '1992',
     title: 'Steering Saginaw Forward',
     thumbnail: '/images/27.png',
-    content: '',
+    content: `Chosen as the sole supplier for Saginaw Steering Gear, Three M spearheaded a transformative project. Implementing revolutionary hard machining techniques, we not only drove significant cost savings but also ensured sustained profitability, marking this venture as one of our most lucrative endeavors to date.`,
   },
   {
     date: '1997',
-    title: `Prowler's Edge: Ahead of Its Time`,
+    title: `Ahead of Its Time: Plymouth Prowler`,
     thumbnail: '/images/28.png',
-    content: '',
+    content: `When Alcoa's machining plan faltered, Three M stepped in on an emergency basis to machine frames. In just 14 weeks, we designed and constructed $1 million worth of automated fixtures. Our dedication ensured the timely production of frames for launch and sustained manufacturing for the subsequent 18 months, showcasing our commitment to excellence in machining.`,
   },
-  {
-    date: '2001',
-    title: 'Navigating the Economic Tempest',
-    thumbnail: '',
-    content: '',
-  },
+  // {
+  //   date: '2001',
+  //   title: 'Navigating the Economic Tempest',
+  //   thumbnail: '',
+  //   content: '',
+  // },
   {
     date: '2002',
     title: 'Energizing the Future',
     thumbnail: '/images/29.png',
-    content: '',
+    content: `Initiating a strategic cost-cutting drive, our company renegotiated contracts and terminated unnecessary services, striving to balance the books. These efforts sustained us until the pivotal acquisition of Dresser Rand in the gas compression sector. Throughout the decade, we expanded our foothold in the industry, securing notable clients such as GE and Truerock. Today, these partnerships remain integral to our thriving business.`,
   },
   {
     date: '2006',
     title: 'The Wind Energy Surge',
     thumbnail: '/images/23.png',
-    content: '',
+    content: `Embracing the momentum of the wind energy boom, we ventured into the sector through Clipper Windpower, a pivotal move that underscored our commitment to innovation and quality. Recognized for our superior craftsmanship, we secured a significant contract to supply gearbox machining and other components, leading to the establishment of our state-of-the-art facility in Wixom. This milestone marked a new chapter in our journey, fueled by the promise of growth and advancement within the renewable energy industry.`,
   },
   {
     date: '2015',
     title: 'Legacy of a Visionary',
     thumbnail: '',
-    content: '',
+    content: `Sharon Medwid's presence shaped our company profoundly. Her unwavering dedication and astute leadership were pivotal during trying times. After her unexpected passing, Mike, her husband and original founding member, took a step back. Concurrently, Sam, deeply committed to the family legacy, required time to transition into a leadership role. Sharon's enduring legacy serves as a beacon, inspiring us as we chart the course ahead.`,
   },
   {
     date: '2020',
     title: 'Dawning of a New Era',
     thumbnail: '',
-    content: '',
+    content: `In the midst of global upheaval, Sam, continuing his mother Sharon's legacy, took the reins amidst the pandemic and the "great resignation." With a new leadership team in place, we navigated through uncertainty, driven by our mission to revitalize the company. Adopting EOS provided clarity, defining our core values and mission to uphold American manufacturing traditions. Despite challenges, our resolve remains unshaken, heralding a new era defined by resilience and unwavering dedication.`,
   },
 ];
 
@@ -212,14 +211,16 @@ const About = () => {
         <section className='bg-white'>
           <div className='gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'>
             <div className='font-light text-gray-500 sm:text-lg'>
-              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Mission Statement</h2>
-              <p className='mb-4'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center lg:text-start'>
+                Mission Statement
+              </h2>
+              <p className='mb-4 text-center lg:text-start'>
                 Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
               </p>
             </div>
             <div className='grid grid-cols-2 gap-4 mt-8'>
               <img
-                className='w-full h-96 object-cover object-left rounded-md shadow-md'
+                className='w-full h-96 object-cover object-center rounded-md shadow-md'
                 src='/images/mike_medwid.jpg'
                 alt='office content 1'
               />
@@ -234,7 +235,7 @@ const About = () => {
 
         {/* History */}
         <section className='py-8 md:py-16'>
-          <div className='mx-auto max-w-screen-lg px-4'>
+          <div className='mx-auto max-w-screen-xl px-4'>
             <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
               <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Company History</h2>
               <p className='font-light text-gray-500 sm:text-xl'>
@@ -274,7 +275,7 @@ const About = () => {
                         index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
                       } gap-6`}>
                       <div className='flex flex-col w-full sm:w-1/2'>
-                        <h3 className='mb-4 text-3xl text-gray-900 sm:text-4xl font-bebas tracking-wider'>
+                        <h3 className='mb-4 text-3xl text-gray-900 sm:text-4xl font-bebas tracking-wider text-center'>
                           {event.title}
                         </h3>
                         <p className='indent-8 mb-2 text-gray-500'>{event.content}</p>
@@ -282,7 +283,7 @@ const About = () => {
                       <div className='w-full sm:w-1/2 flex justify-center items-center'>
                         <img
                           src={event.thumbnail}
-                          className='max-w-full max-h-80 object-contain'
+                          className='max-w-full max-h-96 object-contain'
                           alt=''
                         />
                       </div>
