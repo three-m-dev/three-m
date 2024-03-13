@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router';
 import { Footer, Navbar } from '../components';
 import ServiceGrid from '../components/ServiceGrid';
 
@@ -225,6 +226,10 @@ const Services = () => {
 
         <Footer />
       </div>
+
+      <Routes>
+        <Route patth= />
+      </Routes>
     </>
   );
 };

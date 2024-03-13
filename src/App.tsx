@@ -29,6 +29,10 @@ const App = () => {
           element={<About />}
         />
         <Route
+          path='/services'
+          element={<Services />}
+        />
+        <Route
           path='/services/*'
           element={<Services />}
         />
