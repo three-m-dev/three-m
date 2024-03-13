@@ -30,56 +30,69 @@ const values = [
 const events = [
   {
     date: '1971',
-    title: 'Brightmoor Beginnings: The Early Days',
+    title: `Brightmoor's First Spark`,
     thumbnail: '/images/0.png',
     content: `
 In 1971, Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by two machinists and a salesman, all with "M" last names. Starting with one turning machine, they thrived in the declining "Tool & Die Trade." Co-founder San Miyamoto's attempt to join the Detroit Police, thwarted by height requirements, symbolized their perseverance. This spirit of resilience and creativity fueled the company's growth from its modest start.`,
   },
   {
+    date: '1974',
+    title: 'Milestone: Unveiling the Mill',
+    thumbnail: '/images/31.png',
+    content: `In 1974, Three M Tool & Machine celebrated a pivotal moment with the acquisition of a Devlieg 3B, a testament to enduring craftsmanship dating back to the '30s or '40s. This first boring mill not only marked a significant expansion of our capabilities but also connected us to a legacy of precision engineering, standing as a centerpiece of innovation and history in our facility for decades.`,
+  },
+  {
     date: '1977',
-    title: 'A New Chapter in Richardson',
+    title: `Richardson Rises`,
     thumbnail: '/images/25.png',
+    content: `
+Three M Tool & Machine's expansion didn't slow down, thanks in part to robust partnerships with local GM plants. Space became a premium once again, leading to a timely opportunity as new buildings were rising on Richardson Rd. Our growth was mirrored by our surroundings, with our landlord constructing additions to accommodate us. Eventually, we made a permanent mark by purchasing the land and buildings, establishing our longstanding headquarters at this very location.`,
+  },
+  {
+    date: '1990',
+    title: 'Ultra Grip is Born',
+    thumbnail: '/images/30.png',
     content: '',
   },
   {
     date: '1992',
-    title: "Revolutionizing the Game: Saginaw's Steering Gear",
+    title: 'Steering Saginaw Forward',
     thumbnail: '/images/27.png',
     content: '',
   },
   {
     date: '1997',
-    title: 'The Plymouth Prowler: A Design Ahead of Its Time',
+    title: `Prowler's Edge: Ahead of Its Time`,
     thumbnail: '/images/28.png',
     content: '',
   },
   {
     date: '2001',
-    title: 'The 2001 Economic Storm: Navigating Through Downturn',
+    title: 'Navigating the Economic Tempest',
     thumbnail: '',
     content: '',
   },
   {
     date: '2002',
-    title: 'Power Shift: Diving Into the Energy Sector',
+    title: 'Energizing the Future',
     thumbnail: '/images/29.png',
     content: '',
   },
   {
     date: '2006',
-    title: 'Riding the Wind: The Surge of Wind Energy',
+    title: 'The Wind Energy Surge',
     thumbnail: '/images/23.png',
     content: '',
   },
   {
     date: '2015',
-    title: 'In Memory: The Legacy of a Visionary',
-    thumbnail: '/images/30.png',
+    title: 'Legacy of a Visionary',
+    thumbnail: '',
     content: '',
   },
   {
     date: '2020',
-    title: 'Passing the Torch: A New Era Dawns',
+    title: 'Dawning of a New Era',
     thumbnail: '',
     content: '',
   },
@@ -260,12 +273,19 @@ const About = () => {
                       className={`py-6 border-b border-gray-200 flex flex-col sm:flex-row ${
                         index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
                       } gap-6`}>
-                      <p className='indent-8 mb-2 text-gray-500 w-full sm:w-1/2'>{event.content}</p>
-                      <img
-                        src={event.thumbnail}
-                        className='w-full sm:w-1/2 max-h-96'
-                        alt=''
-                      />
+                      <div className='flex flex-col w-full sm:w-1/2'>
+                        <h3 className='mb-4 text-3xl text-gray-900 sm:text-4xl font-bebas tracking-wider'>
+                          {event.title}
+                        </h3>
+                        <p className='indent-8 mb-2 text-gray-500'>{event.content}</p>
+                      </div>
+                      <div className='w-full sm:w-1/2 flex justify-center items-center'>
+                        <img
+                          src={event.thumbnail}
+                          className='max-w-full max-h-80 object-contain'
+                          alt=''
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
