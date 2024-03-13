@@ -1,12 +1,12 @@
 import { Footer, Navbar } from '../components';
 import ServiceGrid from '../components/ServiceGrid';
 
-const questions = [
-  {
-    question: '',
-    answer: '',
-  },
-];
+// const questions = [
+//   {
+//     question: '',
+//     answer: '',
+//   },
+// ];
 
 const Services = () => {
   return (

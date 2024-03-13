@@ -73,7 +73,7 @@ const events = [
   {
     date: '2015',
     title: 'In Memory: The Legacy of a Visionary',
-    thumbnail: '',
+    thumbnail: '/images/30.png',
     content: '',
   },
   {

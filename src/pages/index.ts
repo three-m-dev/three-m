@@ -13,5 +13,5 @@ export { default as TermsAndConditions } from './TermsAndConditions';
 // Admin
 export { default as AccountManager } from './AccountManager';
 export { default as BulletinManager } from './BlogManager';
-export { default as CareerManager } from './CareerManager';
+// export { default as CareerManager } from './CareerManager';
 export { default as Login } from './Login';

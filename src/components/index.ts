@@ -3,7 +3,7 @@ export { default as BlogCTA } from './BlogCTA';
 export { default as BlogGrid } from './BlogGrid';
 export { default as CareerDetails } from './CareerDetails';
 export { default as CareerList } from './CareerList';
-export { default as CareersTable } from './CareersTable';
+// export { default as CareersTable } from './CareersTable';
 export { default as ContentOne } from './ContentOne';
 export { default as DashboardNavbar } from './DashboardNavbar';
 export { default as FAQs } from './FAQs';
