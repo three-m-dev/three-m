@@ -32,7 +32,8 @@ const events = [
     date: '1971',
     title: 'Brightmoor Beginnings: The Early Days',
     thumbnail: '/images/0.png',
-    content: `In 1971, the Brightmoor neighborhood of Detroit witnessed the birth of Three M Tool & Machine. Founded by two machinists and a salesman, all sharing a commonality with their "M" last names, they began their journey with just one turning machine. At a time when the "Tool & Die Trade" was believed to be fading in Detroit, these founders defied expectations. Among them was San Miyamoto, whose determination to join the Detroit Police Department despite height challenges became a testament to their resilience. Although he never made the cut due to strict height requirements, San's story of perseverance and creativity not only caught the nation's attention but also underscored the founding spirit of Three M. This blend of ingenuity and grit propelled the company forward, marking the start of an enterprise that would grow beyond its humble beginnings.`,
+    content: `
+In 1971, Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by two machinists and a salesman, all with "M" last names. Starting with one turning machine, they thrived in the declining "Tool & Die Trade." Co-founder San Miyamoto's attempt to join the Detroit Police, thwarted by height requirements, symbolized their perseverance. This spirit of resilience and creativity fueled the company's growth from its modest start.`,
   },
   {
     date: '1977',
@@ -239,7 +240,7 @@ const About = () => {
                         {event.date} - {event.title}
                       </span>
                       <svg
-                        className='w-3 h-3 rotate-180 shrink-0'
+                        className={`w-3 h-3 shrink-0 ` + (activeEvent !== index && 'rotate-180')}
                         xmlns='http://www.w3.org/2000/svg'
                         fill='none'
                         viewBox='0 0 10 6'>
@@ -256,13 +257,14 @@ const About = () => {
                   <div className={activeEvent === index ? 'block' : 'hidden'}>
                     <div
                       id={`event-content-${index}`}
-                      className={
-                        `py-6 border-b border-gray-200 flex gap-6 ` + (index % 2 ? 'flex-row' : 'flex-row-reverse')
-                      }>
-                      <p className='indent-8 mb-2 text-gray-500 w-1/2'>{event.content}</p>
+                      className={`py-6 border-b border-gray-200 flex flex-col sm:flex-row ${
+                        index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
+                      } gap-6`}>
+                      <p className='indent-8 mb-2 text-gray-500 w-full sm:w-1/2'>{event.content}</p>
                       <img
                         src={event.thumbnail}
-                        className='w-1/2 max-h-96'
+                        className='w-full sm:w-1/2 max-h-96'
+                        alt=''
                       />
                     </div>
                   </div>
