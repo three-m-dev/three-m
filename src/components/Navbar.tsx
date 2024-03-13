@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
@@ -109,7 +108,53 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      {isMobileNavOpen && <MobileMenu toggleMenu={toggleMobileNavbar} />}
+
+      {isMobileNavOpen && (
+        <div className='fixed left-0 top-0 z-50 h-full w-full overflow-y-auto bg-white'>
+          <ul className='flex flex-col items-center py-20 gap-6 justify-center h-full uppercase'>
+            <li>
+              <Link
+                to='/'
+                onClick={toggleMobileNavbar}
+                className='text-2xl'>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/about'
+                onClick={toggleMobileNavbar}
+                className='text-2xl'>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/services'
+                onClick={toggleMobileNavbar}
+                className='text-2xl'>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/careers'
+                onClick={toggleMobileNavbar}
+                className='text-2xl'>
+                Careers
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/bulletin'
+                onClick={toggleMobileNavbar}
+                className='text-2xl'>
+                Bulletin
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </>
   );
 };

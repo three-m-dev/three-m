@@ -40,15 +40,15 @@ const Contact = () => {
             <p className='mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl'>
               Reach out for solutions and support.
             </p>
-            <div className='flex flex-col lg:flex-row justify-between items-start lg:items-stretch gap-6'>
-              <div className='lg:w-1/2 bg-gray-300 rounded-md shadow-md hidden lg:block'>
-                <p className='text-gray-700 text-center flex items-center justify-center h-full'>
+            <div className='flex flex-col-reverse lg:flex-row justify-between items-start lg:items-stretch gap-6 transition-all'>
+              <div className='w-full lg:w-1/2 bg-gray-300 rounded-md shadow-md lg:block'>
+                <p className='text-gray-700 text-center flex items-center justify-center min-h-96 h-full'>
                   Google Map Placeholder
                 </p>
               </div>
               <form
                 onSubmit={handleSubmit}
-                className='lg:w-1/2 space-y-8'>
+                className='w-full lg:w-1/2 space-y-8'>
                 <div>
                   <label
                     htmlFor='email'
