@@ -226,10 +226,6 @@ const Services = () => {
 
         <Footer />
       </div>
-
-      <Routes>
-        <Route patth= />
-      </Routes>
     </>
   );
 };
