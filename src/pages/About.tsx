@@ -50,7 +50,7 @@ Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by t
   {
     date: '1990',
     title: 'Ultra Grip is Born',
-    thumbnail: '/images/30.png',
+    thumbnail: '/images/33.png',
     content: `Born from innovation and collaboration, Ultra Grip emerged under the leadership of Ken Cross and Chief Engineer Don Wrobel. Specializing in work-holding solutions, our journey began with enhanced 'ball chucks' and a talented team in Traverse City. Transitioning to 'International' reflects our global outlook and commitment to excellence.`,
   },
   {
@@ -86,7 +86,7 @@ Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by t
   {
     date: '2015',
     title: 'Legacy of a Visionary',
-    thumbnail: '',
+    thumbnail: '/images/34.png',
     content: `Sharon Medwid's presence shaped our company profoundly. Her unwavering dedication and astute leadership were pivotal during trying times. After her unexpected passing, Mike, her husband and original founding member, took a step back. Concurrently, Sam, deeply committed to the family legacy, required time to transition into a leadership role. Sharon's enduring legacy serves as a beacon, inspiring us as we chart the course ahead.`,
   },
   {
@@ -221,7 +221,7 @@ const About = () => {
             <div className='grid grid-cols-2 gap-4 mt-8'>
               <img
                 className='w-full h-96 object-cover object-center rounded-md shadow-md'
-                src='/images/mike_medwid.jpg'
+                src='/images/32.png'
                 alt='office content 1'
               />
               <img
@@ -235,7 +235,7 @@ const About = () => {
 
         {/* History */}
         <section className='py-8 md:py-16'>
-          <div className='mx-auto max-w-screen-xl px-4'>
+          <div className='mx-auto max-w-screen-lg px-4'>
             <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
               <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Company History</h2>
               <p className='font-light text-gray-500 sm:text-xl'>
