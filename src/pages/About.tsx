@@ -43,13 +43,13 @@ const events = [
   {
     date: '1992',
     title: "Revolutionizing the Game: Saginaw's Steering Gear",
-    thumbnail: '',
+    thumbnail: '/images/27.png',
     content: '',
   },
   {
     date: '1997',
     title: 'The Plymouth Prowler: A Design Ahead of Its Time',
-    thumbnail: '',
+    thumbnail: '/images/28.png',
     content: '',
   },
   {
@@ -61,7 +61,7 @@ const events = [
   {
     date: '2002',
     title: 'Power Shift: Diving Into the Energy Sector',
-    thumbnail: '',
+    thumbnail: '/images/29.png',
     content: '',
   },
   {
@@ -88,7 +88,7 @@ const About = () => {
   const [yearsInBusiness, setYearsInBusiness] = useState(0);
   const [projectsCompleted, setProjectsCompleted] = useState(0);
   const [industriesServed, setIndustriesServed] = useState(0);
-  const [activeEvent, setActiveEvent] = useState<number | null>(0);
+  const [activeEvent, setActiveEvent] = useState(0);
 
   const animateValue = (target: number, setDisplayValue: React.Dispatch<React.SetStateAction<number>>) => {
     const duration = 1000;
@@ -113,6 +113,20 @@ const About = () => {
     animateValue(5000, setProjectsCompleted);
     animateValue(25, setIndustriesServed);
   }, []);
+
+  const openEvent = (index: number) => {
+    setActiveEvent(index);
+
+    setTimeout(() => {
+      const targetDiv = document.getElementById(`event-content-${index}`);
+      if (targetDiv) {
+        targetDiv.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }
+    }, 0);
+  };
 
   return (
     <>
@@ -216,10 +230,10 @@ const About = () => {
             <div>
               {events.map((event, index) => (
                 <div key={index}>
-                  <h2 id='accordion-flush-heading-1'>
+                  <h2>
                     <button
                       type='button'
-                      onClick={() => setActiveEvent(index)}
+                      onClick={() => openEvent(index)}
                       className='flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 gap-3'>
                       <span>
                         {event.date} - {event.title}
@@ -231,18 +245,25 @@ const About = () => {
                         viewBox='0 0 10 6'>
                         <path
                           stroke='currentColor'
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
-                          stroke-width='2'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
                           d='M9 5 5 1 1 5'
                         />
                       </svg>
                     </button>
                   </h2>
                   <div className={activeEvent === index ? 'block' : 'hidden'}>
-                    <div className='py-6 border-b border-gray-200 flex gap-6'>
+                    <div
+                      id={`event-content-${index}`}
+                      className={
+                        `py-6 border-b border-gray-200 flex gap-6 ` + (index % 2 ? 'flex-row' : 'flex-row-reverse')
+                      }>
                       <p className='indent-8 mb-2 text-gray-500 w-1/2'>{event.content}</p>
-                      <img src={event.thumbnail} className='w-1/2' />
+                      <img
+                        src={event.thumbnail}
+                        className='w-1/2 max-h-96'
+                      />
                     </div>
                   </div>
                 </div>

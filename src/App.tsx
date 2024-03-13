@@ -4,7 +4,6 @@ import {
   Blog,
   BulletinManager,
   BulletinPost,
-  CareerManager,
   Careers,
   Contact,
   Home,
@@ -53,10 +52,10 @@ const App = () => {
           path='/dashboard/login'
           element={<Login />}
         />
-        <Route
+        {/* <Route
           path='/dashboard/careers'
           element={<CareerManager />}
-        />
+        /> */}
         <Route
           path='/dashboard/bulletin'
           element={<BulletinManager />}
