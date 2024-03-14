@@ -1,7 +1,36 @@
 import { Link } from 'react-router-dom';
-import { BlogCTA, Footer, Hero, ImageMenu, Navbar } from '../components';
-import ContentOne from '../components/ContentOne';
+import { Footer, Navbar } from '../components';
 import { formatToKebabCase } from '../utils/format';
+import { useState } from 'react';
+
+const slides = [
+  {
+    title: 'Innovation in Manufacturing',
+    cta: 'Learn More',
+    url: '/services',
+    image: 'https://as1.ftcdn.net/v2/jpg/03/26/28/70/1000_F_326287003_HLZJZhT7l4v76OaqfMd1rjQDHldb0Wm8.jpg',
+    alt: '',
+    align: 'left',
+  },
+  {
+    title: 'Seamless Production Flow',
+    cta: 'Learn More',
+    url: '/services',
+    image: 'https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg',
+    imagePosition: 'center',
+    alt: '',
+    align: 'right',
+  },
+  {
+    title: 'Quality Assurance in Every Build',
+    cta: 'Learn More',
+    url: '/services',
+    image: '/images/caliper-on-print.jpg',
+    imagePosition: 'object-center',
+    alt: '',
+    align: 'left',
+  },
+];
 
 const services = [
   {
@@ -98,11 +127,100 @@ const services = [
 ];
 
 const Home = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handlePrevClick = () => {
+    if (slideIndex === 0) {
+      setSlideIndex(slides.length - 1);
+    } else {
+      setSlideIndex(slideIndex - 1);
+    }
+  };
+
+  const handleNextClick = () => {
+    if (slideIndex === slides.length - 1) {
+      setSlideIndex(0);
+    } else {
+      setSlideIndex(slideIndex + 1);
+    }
+  };
+
   return (
     <>
       <Navbar />
+
       <div className='mt-16'>
-        <Hero />
+        {/* Slideshow */}
+        <div className='relative flex h-[65vh] max-w-screen items-center justify-center'>
+          <img
+            src={slides[slideIndex].image}
+            alt={slides[slideIndex].alt}
+            className={`absolute z-0 h-full w-full object-cover ` + slides[slideIndex].imagePosition}
+          />
+          <div className='absolute z-10 h-full w-full bg-black opacity-60'></div>
+
+          <div className='relative z-20 mx-auto flex w-full max-w-screen-xl justify-center lg:justify-start'>
+            <div
+              className={`flex flex-col items-center gap-8 sm:w-2/5 ${
+                slides[slideIndex].align === 'right' && 'lg:ml-auto'
+              } ${slides[slideIndex].align === 'center' && 'lg:mx-auto'}`}>
+              <h1 className='text-center font-bebas text-3xl md:text-5xl uppercase tracking-wider text-white'>
+                {slides[slideIndex].title}
+              </h1>
+              <Link
+                to={slides[slideIndex].url}
+                className='rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary'>
+                {slides[slideIndex].cta}
+              </Link>
+            </div>
+          </div>
+
+          <button
+            className='absolute left-2 top-1/2 z-30 -translate-y-1/2 rounded bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100'
+            onClick={handlePrevClick}>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={1.5}
+              stroke='currentColor'
+              className='h-5 w-5'>
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M15.75 19.5L8.25 12l7.5-7.5'
+              />
+            </svg>
+          </button>
+          <button
+            className='absolute right-2 top-1/2 z-30 -translate-y-1/2 rounded bg-white p-2.5 text-primary opacity-25 transition-all duration-300 hover:opacity-100'
+            onClick={handleNextClick}>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={1.5}
+              stroke='currentColor'
+              className='h-5 w-5'>
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M8.25 4.5l7.5 7.5-7.5 7.5'
+              />
+            </svg>
+          </button>
+
+          <div className='absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 transform gap-3'>
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                className={`h-3 w-3 rounded border border-white transition-all duration-300 ${
+                  slideIndex === index ? 'bg-white' : 'bg-transparent hover:border-primary hover:bg-primary'
+                }`}
+                onClick={() => setSlideIndex(index)}></button>
+            ))}
+          </div>
+        </div>
 
         {/* Services */}
         <section className='bg-white'>
@@ -132,9 +250,192 @@ const Home = () => {
           </div>
         </section>
 
-        <ContentOne />
-        <BlogCTA />
-        <ImageMenu />
+        {/* Content */}
+        <section className='bg-white'>
+          <div className='gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'>
+            <div className='font-light text-gray-500 sm:text-lg'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>
+                Innovative Precision, Unparalleled Results
+              </h2>
+              <p className='mb-4'>
+                Dive into the world of precision engineering, where our expertise spans across vertical and horizontal
+                turning, and meticulous grinding. Each service is a testament to our commitment to precision and
+                quality.
+              </p>
+              <p>
+                From the initial design to the final assembly, we ensure that every detail is perfected. Our approach
+                combines innovation with craftsmanship, bringing your ideas to life with unmatched efficiency and
+                precision.
+              </p>
+            </div>
+            <div className='grid grid-cols-2 gap-4 mt-8'>
+              <img
+                className='w-full h-96 object-cover rounded-md shadow-md'
+                src='/images/21.png'
+                alt='office content 1'
+              />
+              <img
+                className='mt-4 w-full h-96 object-cover lg:mt-10 rounded-md shadow-md'
+                src='https://www.shutterstock.com/shutterstock/photos/1432126148/display_1500/stock-photo-milling-tools-in-cnc-machine-chop-1432126148.jpg'
+                alt='office content 2'
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Bulletin Preview */}
+        <section className='bg-white'>
+          <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
+            <div className='mx-auto max-w-screen-sm text-center lg:mb-16 mb-8'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Latest Updates</h2>
+              <p className='font-light text-gray-500 sm:text-xl'>Catch up on our latest news and insights.</p>
+            </div>
+            <div className='grid gap-8 lg:grid-cols-2'>
+              <article className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
+                <div className='flex justify-between items-center mb-5 text-gray-500'>
+                  <span className='bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800'>
+                    <svg
+                      className='mr-1 w-3 h-3'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      xmlns='http://www.w3.org/2000/svg'>
+                      <path
+                        fillRule='evenodd'
+                        d='M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z'
+                        clipRule='evenodd'></path>
+                      <path d='M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z'></path>
+                    </svg>
+                    Update
+                  </span>
+                  <span className='text-sm'>14 days ago</span>
+                </div>
+                <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                  <Link to='/bulletin/1'>Trends and Innovations Shaping Our Industry</Link>
+                </h2>
+                <p className='mb-5 font-light text-gray-500'>
+                  Explore the cutting-edge trends and technological innovations driving the future of CNC machining,
+                  from automation to advanced materials.
+                </p>
+                <div className='flex justify-between items-center'>
+                  <div className='flex items-center space-x-4'>
+                    <img
+                      className='w-7 h-7 rounded-full'
+                      src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png'
+                      alt='Jese Leos avatar'
+                    />
+                    <span className='font-medium'>Sam Medwid</span>
+                  </div>
+                  <Link
+                    to='/bulletin/1'
+                    className='inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline'>
+                    Read more
+                    <svg
+                      className='ml-2 w-4 h-4'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      xmlns='http://www.w3.org/2000/svg'>
+                      <path
+                        fillRule='evenodd'
+                        d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
+                        clipRule='evenodd'></path>
+                    </svg>
+                  </Link>
+                </div>
+              </article>
+              <article className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
+                <div className='flex justify-between items-center mb-5 text-gray-500'>
+                  <span className='bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800'>
+                    <svg
+                      className='mr-1 w-3 h-3'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      xmlns='http://www.w3.org/2000/svg'>
+                      <path
+                        fillRule='evenodd'
+                        d='M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z'
+                        clipRule='evenodd'></path>
+                      <path d='M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z'></path>
+                    </svg>
+                    Article
+                  </span>
+                  <span className='text-sm'>14 days ago</span>
+                </div>
+                <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                  <Link to='/bulletin/1'>Maximizing Efficiency: Tips for Streamlining Your CNC Machining Process</Link>
+                </h2>
+                <p className='mb-5 font-light text-gray-500'>
+                  Discover practical tips and strategies to enhance your CNC machining process, improving efficiency and
+                  reducing waste without compromising quality.
+                </p>
+                <div className='flex justify-between items-center'>
+                  <div className='flex items-center space-x-4'>
+                    <img
+                      className='w-7 h-7 rounded-full'
+                      src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png'
+                      alt='Bonnie Green avatar'
+                    />
+                    <span className='font-medium'>Dave Husk</span>
+                  </div>
+                  <Link
+                    to='/bulletin/1'
+                    className='inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline'>
+                    Read more
+                    <svg
+                      className='ml-2 w-4 h-4'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      xmlns='http://www.w3.org/2000/svg'>
+                      <path
+                        fillRule='evenodd'
+                        d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
+                        clipRule='evenodd'></path>
+                    </svg>
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* Image Navigation */}
+        <div className='w-full flex flex-col sm:flex-row'>
+          <Link
+            to='/services'
+            className='block w-full md:w-1/3 aspect-video'>
+            <div
+              className='w-full h-full bg-cover bg-center flex justify-center items-center bg-red-50 relative'
+              style={{
+                backgroundImage: `url('/images/5.png')`,
+              }}>
+              <div className='absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center'>
+                <span className='text-white text-3xl sm:text-5xl uppercase font-bebas tracking-wider'>Services</span>
+              </div>
+            </div>
+          </Link>
+          <Link
+            to='/careers'
+            className='block w-full md:w-1/3 aspect-video'>
+            <div
+              className='w-full h-full bg-cover bg-center flex justify-center items-center relative'
+              style={{ backgroundImage: `url('/images/4.png')` }}>
+              <div className='absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center'>
+                <span className='text-white text-3xl sm:text-5xl uppercase font-bebas tracking-wider'>Careers</span>
+              </div>
+            </div>
+          </Link>
+          <Link
+            to='/contact'
+            className='block w-full md:w-1/3 aspect-video'>
+            <div
+              className='w-full h-full bg-cover bg-center flex justify-center items-center relative'
+              style={{ backgroundImage: `url('/images/three-m-building.jpg')` }}>
+              <div className='absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center'>
+                <span className='text-white text-3xl sm:text-5xl uppercase font-bebas tracking-wider'>Contact</span>
+              </div>
+            </div>
+          </Link>
+        </div>
+
         <Footer />
       </div>
     </>

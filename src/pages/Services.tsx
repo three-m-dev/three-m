@@ -1,4 +1,4 @@
-import { Card, Footer, Navbar } from '../components';
+import { Footer, Navbar, ServiceCard } from '../components';
 
 const services = [
   {
@@ -109,7 +109,7 @@ const Services = () => {
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
               {services.map((service, index) => (
-                <Card
+                <ServiceCard
                   key={index}
                   title={service.title}
                   path={service.path}
