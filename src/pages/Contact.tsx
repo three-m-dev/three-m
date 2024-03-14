@@ -48,11 +48,18 @@ const Contact = () => {
             <p className='mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl'>
               Reach out for solutions and support.
             </p>
-            <div className='flex flex-col-reverse lg:flex-row justify-between items-start lg:items-stretch gap-6 transition-all'>
-              <div className='w-full lg:w-1/2 bg-gray-300 rounded-md shadow-md lg:block min-h-96'></div>
+            <div className='flex flex-col-reverse lg:flex-row justify-between items-start gap-6 transition-all h-max'>
+              <div className='w-full lg:w-1/2 bg-gray-300 rounded-md shadow-md lg:block min-h-96 relative'>
+                <iframe
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+                  title='Google Maps'
+                  src={`https://www.google.com/maps/embed/v1/view?key=${apiKey}&center=42.577369689941406,-83.4441909790039&zoom=18`}
+                  allowFullScreen
+                />
+              </div>
               <form
                 onSubmit={handleSubmit}
-                className='w-full lg:w-1/2 space-y-8'>
+                className='w-full lg:w-1/2 space-y-6'>
                 <div>
                   <label
                     htmlFor='email'
@@ -98,7 +105,7 @@ const Contact = () => {
                 </div>
                 <button
                   type='submit'
-                  className='text-white bg-primary hover:bg-primary-700 hover:text-white border border-primary transition ease-in-out duration-300 focus:outline-none rounded px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
+                  className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded-md px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
                   Send message
                 </button>
               </form>

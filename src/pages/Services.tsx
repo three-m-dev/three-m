@@ -98,8 +98,10 @@ const Services = () => {
             </h2>
             <div className='grid pt-8 text-left border-t border-gray-200 md:gap-16 md:grid-cols-2'>
               <div>
-                {odd.map((question) => (
-                  <div className='mb-10'>
+                {odd.map((question, index) => (
+                  <div
+                    key={index}
+                    className='mb-10'>
                     <h3 className='flex items-center mb-4 text-lg font-medium text-gray-900'>
                       <svg
                         className='flex-shrink-0 mr-2 w-5 h-5 text-gray-500'
@@ -119,8 +121,10 @@ const Services = () => {
               </div>
 
               <div>
-                {even.map((question) => (
-                  <div className='mb-10'>
+                {even.map((question, index) => (
+                  <div
+                    key={index}
+                    className='mb-10'>
                     <h3 className='flex items-center mb-4 text-lg font-medium text-gray-900'>
                       <svg
                         className='flex-shrink-0 mr-2 w-5 h-5 text-gray-500'

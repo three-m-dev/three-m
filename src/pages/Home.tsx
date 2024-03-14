@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { BlogCTA, Footer, Hero, ImageMenu, Navbar } from '../components';
 import ContentOne from '../components/ContentOne';
+import { formatToKebabCase } from '../utils/format';
 
 const services = [
   {
@@ -116,13 +118,15 @@ const Home = () => {
             </div>
             <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
               {services.map((service, index) => (
-                <div key={index}>
+                <Link
+                  to={'/services/' + formatToKebabCase(service.title)}
+                  key={index}>
                   <div className='mb-4 rounded border-2 border-primary bg-white p-2 text-primary w-max'>
                     {service.icon}
                   </div>
                   <h3 className='mb-2 text-xl font-bold'>{service.title}</h3>
                   <p className='text-gray-500'>{service.description}</p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
