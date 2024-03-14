@@ -1,9 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
   About,
-  Blog,
+  Bulletin,
   BulletinManager,
-  BulletinPost,
   Careers,
   Contact,
   Home,
@@ -19,6 +18,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+
       <Routes>
         <Route
           path='/'
@@ -38,11 +38,7 @@ const App = () => {
         />
         <Route
           path='/bulletin'
-          element={<Blog />}
-        />
-        <Route
-          path='/bulletin/*'
-          element={<BulletinPost />}
+          element={<Bulletin />}
         />
         <Route
           path='/contact'
@@ -52,10 +48,6 @@ const App = () => {
           path='/dashboard/login'
           element={<Login />}
         />
-        {/* <Route
-          path='/dashboard/careers'
-          element={<CareerManager />}
-        /> */}
         <Route
           path='/dashboard/bulletin'
           element={<BulletinManager />}
