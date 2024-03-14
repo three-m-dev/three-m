@@ -11,7 +11,6 @@ export { default as Navbar } from './Navbar';
 
 // forms
 export { default as ApplicationForm } from './forms/ApplicationForm';
-export { default as NewsletterForm } from './forms/NewsletterForm';
 export { default as ResumeForm } from './forms/ResumeForm';
 
 // reusable

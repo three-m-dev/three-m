@@ -222,7 +222,7 @@ const CareerList = () => {
     } else if (!loading && dataReady && filteredCareers.length === 0) {
       return (
         <div className='mt-8 w-full text-center items-center flex flex-col'>
-          <div className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>No Current Listings</div>
+          <div className='mb-4 text-3xl text-gray-900 sm:text-4xl font-bebas tracking-wider'>No Current Listings</div>
           <p className='font-light text-gray-500 sm:text-xl max-w-screen-lg'>
             No listings on our site at this moment. We invite you to check our{' '}
             <a
