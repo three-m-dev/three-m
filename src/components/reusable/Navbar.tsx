@@ -29,7 +29,7 @@ const Navbar = () => {
             />
           </Link>
           <div className='flex gap-8'>
-            <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
+            <div className='flex md:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse'>
               <Link
                 to='/contact'
                 className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded-md px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 data-collapse-toggle='navbar-sticky'
                 type='button'
                 onClick={toggleMobileNavbar}
-                className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'
+                className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'
                 aria-controls='navbar-sticky'
                 aria-expanded='false'>
                 <span className='sr-only'>Open main menu</span>
@@ -60,7 +60,7 @@ const Navbar = () => {
               </button>
             </div>
             <div
-              className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
+              className='items-center justify-between hidden w-full lg:flex lg:w-auto md:order-1'
               id='navbar-sticky'>
               <ul className='flex flex-col p-4 md:p-0 mt-4 font-semibold border border-gray-100 rounded bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white uppercase'>
                 <li>

@@ -5,9 +5,8 @@ export { default as CareerList } from './CareerList';
 // export { default as CareersTable } from './CareersTable';
 export { default as DashboardNavbar } from './dashboard/DashboardNavbar';
 
-export { default as Footer } from './Footer';
-export { default as Hero } from './Hero';
-export { default as Navbar } from './Navbar';
+export { default as Footer } from './reusable/Footer';
+export { default as Navbar } from './reusable/Navbar';
 
 // forms
 export { default as ApplicationForm } from './forms/ApplicationForm';

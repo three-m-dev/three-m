@@ -182,6 +182,36 @@ const CareerList = () => {
   const [loading, setLoading] = useState(true);
   const [dataReady, setDataReady] = useState(false);
 
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [emailAddress, setEmailAddress] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [resume, setResume] = useState<File | null>(null);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = e.target.files && e.target.files[0];
+
+    if (selectedFile) {
+      const allowedExtensions = ['.pdf', '.doc', '.docx'];
+      const fileExtension = selectedFile.name.toLowerCase().slice(-4);
+
+      if (allowedExtensions.includes(fileExtension)) {
+        setResume(selectedFile);
+      } else {
+        console.error('Invalid file extension. Please select a PDF or DOC file.');
+        setResume(null);
+      }
+    } else {
+      setResume(null);
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log('Form submitted');
+  };
+
   useEffect(() => {
     setLoading(true);
 
@@ -215,7 +245,7 @@ const CareerList = () => {
   const renderCareers = () => {
     if (loading) {
       return (
-        <div className='w-full py-12'>
+        <div className='w-full mt-8 min-h-[112px] flex items-center justify-center'>
           <Loading />;
         </div>
       );
@@ -296,7 +326,7 @@ const CareerList = () => {
                   </div>
                 </div>
                 <Link
-                  className='rounded border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white md:ml-4'
+                  className='rounded-md border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-500 hover:bg-primary hover:text-white md:ml-4'
                   to={`/careers/${career.id}`}>
                   Learn More
                 </Link>
@@ -310,7 +340,7 @@ const CareerList = () => {
 
   return (
     <>
-      <section className='bg-white mt-16 min-h-screen'>
+      <section className='bg-white mt-16'>
         <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 '>
           <div className='mx-auto max-w-screen-sm text-center mb-8 lg:mb-16'>
             <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Career Openings</h2>
@@ -321,9 +351,9 @@ const CareerList = () => {
           <div className='mx-auto'>
             <div className='flex flex-wrap items-center justify-center'>
               <div className='mb-4 w-full md:mb-8 md:w-1/3 md:pr-2'>
-                <div className='relative rounded border border-gray-200 bg-white shadow'>
+                <div className='relative rounded-md border border-gray-200 bg-white shadow'>
                   <select
-                    className='w-full appearance-none rounded border-0 bg-transparent px-4 py-2 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50'
+                    className='w-full appearance-none rounded-md border-0 bg-transparent px-4 py-2 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50'
                     value={locationFilter}
                     onChange={handleLocationChange}>
                     <option value='All'>Location</option>
@@ -334,9 +364,9 @@ const CareerList = () => {
                 </div>
               </div>
               <div className='mb-0 w-full md:mb-8 md:w-1/3 md:pl-2'>
-                <div className='relative rounded border border-gray-200 bg-white shadow'>
+                <div className='relative rounded-md border border-gray-200 bg-white shadow'>
                   <select
-                    className='w-full appearance-none rounded border-0 bg-transparent px-4 py-2 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50'
+                    className='w-full appearance-none rounded-md border-0 bg-transparent px-4 py-2 leading-6 text-gray-500 outline-none hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50'
                     value={typeFilter}
                     onChange={handleTypeChange}>
                     <option value='All'>Type</option>
@@ -348,6 +378,109 @@ const CareerList = () => {
                 </div>
               </div>
               {renderCareers()}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='bg-white'>
+        <div className='mx-auto max-w-screen-xl px-4 lg:px-6 py-8 md:py-16'>
+          <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
+            <div className='flex flex-col items-center justify-center px-4 lg:col-span-2'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>
+                Don't see a position that fits?
+              </h2>
+              <p className='font-light text-gray-500 sm:text-xl max-w-screen-lg'>
+                Send us your resume and we'll keep you in mind for future opportunities.
+              </p>
+            </div>
+
+            <div className='rounded-md bg-primary lg:col-span-3'>
+              <form
+                onSubmit={handleSubmit}
+                className='flex flex-col p-4'>
+                <h2 className='text-3xl text-white sm:text-4xl font-bebas tracking-wider text-center'>Upload Resume</h2>
+
+                <div className='flex flex-col sm:flex-row w-full gap-4'>
+                  <div className='mb-2 w-full'>
+                    <label className='font-light text-white sm:text-lg mb-2'>First Name</label>
+                    <input
+                      className='text-md w-full rounded-md border-gray-200 px-4 py-2 focus:outline-none'
+                      placeholder='First Name'
+                      type='text'
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                    />
+                  </div>
+
+                  <div className='mb-2 w-full'>
+                    <label className='font-light text-white sm:text-lg mb-2'>Last Name</label>
+                    <input
+                      className='text-md w-full rounded-md border-gray-200 px-4 py-2 focus:outline-none'
+                      placeholder='Last Name'
+                      type='text'
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                    />
+                  </div>
+                </div>
+
+                <div className='mb-4 flex-col sm:flex-row flex w-full gap-4'>
+                  <div className='w-full'>
+                    <label className='font-light text-white sm:text-lg mb-2'>Email</label>
+                    <input
+                      className='text-md w-full rounded-md border-gray-200 px-4 py-2 focus:outline-none'
+                      placeholder='Email Address'
+                      type='email'
+                      value={emailAddress}
+                      onChange={(e) => setEmailAddress(e.target.value)}
+                    />
+                  </div>
+
+                  <div className='w-full'>
+                    <label className='font-light text-white sm:text-lg mb-2'>Phone</label>
+                    <input
+                      className='text-md w-full rounded-md border-gray-200 px-4 py-2 focus:outline-none'
+                      placeholder='Phone Number'
+                      type='tel'
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
+                    />
+                  </div>
+                </div>
+
+                <div className='flex w-full flex-col justify-end gap-4 md:flex-row'>
+                  <label className='sr-only'>Resume</label>
+                  <input
+                    className='hidden w-full border-gray-200 text-sm text-white'
+                    id='upload-file'
+                    type='file'
+                    accept='.pdf,.doc,.docx'
+                    onChange={handleFileChange}
+                  />
+                  <div className='flex flex-col-reverse gap-4 sm:flex-row'>
+                    {resume !== null && (
+                      <div className='flex w-full items-center justify-center sm:justify-start'>
+                        <p className='text-white'>{resume.name}</p>
+                      </div>
+                    )}
+                    <button
+                      onClick={(event) => {
+                        event.preventDefault();
+                        document.getElementById('upload-file')?.click();
+                      }}
+                      className='whitespace-nowrap rounded-md border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary'>
+                      Select File
+                    </button>
+                  </div>
+
+                  <button
+                    type='submit'
+                    className='rounded-md border-2 border-white px-4 py-2 text-sm font-bold uppercase text-white transition-all duration-500 hover:bg-white hover:text-primary'>
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -369,13 +502,13 @@ const CareerContent = () => {
             <div className='mb-2 flex gap-2 md:mb-0'>
               <Link
                 to={`/careers/${career.id}/apply`}
-                className='rounded border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white'>
+                className='rounded-md border-2 border-primary px-4 py-2 text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white'>
                 Apply Now
               </Link>
               {/* <div className='relative'>
                 <button
                   onClick={() => handleCopyToClipboard(pageUrl)}
-                  className='rounded border-2 border-primary p-2 text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white'
+                  className='rounded-md border-2 border-primary p-2 text-sm font-bold uppercase text-primary transition-all duration-300 hover:bg-primary hover:text-white'
                   data-tip={copied ? 'Copied' : 'Copy URL'}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -392,7 +525,7 @@ const CareerContent = () => {
                   </svg>
                 </button>
                 {copied && (
-                  <div className='fixed bottom-4 right-4 flex-1 rounded bg-blue-500 px-4 py-2 text-sm text-white'>
+                  <div className='fixed bottom-4 right-4 flex-1 rounded-md bg-blue-500 px-4 py-2 text-sm text-white'>
                     Copied to clipboard!
                   </div>
                 )}
@@ -406,10 +539,10 @@ const CareerContent = () => {
                 <span className='mb-1 flex items-center gap-2 md:mb-0'>{career.location}</span>
               </p>
               <div className='flex gap-2'>
-                <span className='rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
+                <span className='rounded-md bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
                   {career.employmentType}
                 </span>
-                <span className='rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
+                <span className='rounded-md bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
                   {career.location}
                 </span>
               </div>
@@ -451,16 +584,16 @@ const CareerContent = () => {
               <Link
                 to={`/careers/${career.id}`}
                 key={index}
-                className='h-content w-full rounded border-2 border-gray-200 px-4 py-2'>
+                className='h-content w-full rounded-md border-2 border-gray-200 px-4 py-2'>
                 <div className='mb-1'>
                   <h2 className='truncate text-lg font-bold text-gray-800'>{career.title}</h2>
                   <p className='font-bold text-gray-800'>{career.company}</p>
                 </div>
                 <div className='mb-1 flex gap-2'>
-                  <span className='rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
+                  <span className='rounded-md bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
                     {career.employmentType}
                   </span>
-                  <span className='rounded bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
+                  <span className='rounded-md bg-blue-200 px-2 py-1 text-xs tracking-wider text-primary'>
                     {career.location}
                   </span>
                 </div>
