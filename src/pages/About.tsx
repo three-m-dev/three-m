@@ -205,13 +205,30 @@ const About = () => {
 
         {/* Mission Statement */}
         <section className='bg-white'>
+          <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
+            <div className='mx-auto max-w-screen-sm text-center'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Mission Statement</h2>
+              <p className='font-light text-gray-500 sm:text-xl'>
+                Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Proven Process */}
+        <section className='bg-white'>
           <div className='gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'>
             <div className='font-light text-gray-500 sm:text-lg'>
-              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center lg:text-start'>
-                Mission Statement
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider text-center'>
+                Proven Process
               </h2>
-              <p className='mb-4 text-center lg:text-start'>
-                Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
+              <p className='mb-4 text-center lg:text-start indent-8'>
+                Founded in 1971, Three M Tool & Machine is a high performance, family owned, contract machine shop with
+                unique capabilities and experience in many sectors of the manufacturing industry. Take a look and you
+                will see why Three M Tool & Machine is the precision machining solution for today’s manufacturers,
+                offering Quality, Efficiency and Delivery to surpass customer expectations. Three M Tool & Machine is
+                your one stop source for small, medium and large part machining along with many other processes. Our
+                Quality System is ISO 9001:2015 Certified.
               </p>
             </div>
             <div className='grid grid-cols-2 gap-4 mt-8'>
