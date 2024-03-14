@@ -2,7 +2,7 @@ const Loading = () => {
   return (
     <div
       role='status'
-      className='flex h-96 w-full items-center justify-center sm:h-48'>
+      className='flex w-full items-center justify-center'>
       <svg
         aria-hidden='true'
         className='h-10 w-10 animate-spin fill-primary text-gray-200'
