@@ -65,12 +65,6 @@ Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by t
     thumbnail: '/images/28.png',
     content: `When Alcoa's machining plan faltered, Three M stepped in on an emergency basis to machine frames. In just 14 weeks, we designed and constructed $1 million worth of automated fixtures. Our dedication ensured the timely production of frames for launch and sustained manufacturing for the subsequent 18 months, showcasing our commitment to excellence in machining.`,
   },
-  // {
-  //   date: '2001',
-  //   title: 'Navigating the Economic Tempest',
-  //   thumbnail: '',
-  //   content: '',
-  // },
   {
     date: '2002',
     title: 'Energizing the Future',
@@ -220,7 +214,7 @@ const About = () => {
             </div>
             <div className='grid grid-cols-2 gap-4 mt-8'>
               <img
-                className='w-full h-96 object-cover object-center rounded-md shadow-md'
+                className='w-full h-96 object-cover sm:object-center rounded-md shadow-md'
                 src='/images/32.png'
                 alt='office content 1'
               />
