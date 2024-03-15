@@ -126,9 +126,7 @@ const Footer = () => {
                 to='https://www.google.com/maps/place/Three+M+Tool+and+Machine,+Inc./@42.577088,-83.4467241,17z/data=!3m1!4b1!4m6!3m5!1s0x8824a4ea968cf125:0x8e4c1d7fddc834d6!8m2!3d42.5770841!4d-83.4441492!16s%2Fg%2F1tgdtrtz?entry=ttu'
                 target='blank'
                 className='hover:underline text-center'>
-                <p>8155 Richardson Rd</p>
-                <p>Commerce Charter Township</p>
-                <p> Michigan 48390</p>
+                <p>Commerce Township, Michigan</p>
               </Link>
             </li>
             <li>

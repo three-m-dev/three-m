@@ -163,10 +163,6 @@ const About = () => {
                 <dt className='mb-2 text-3xl text-white sm:text-5xl font-bebas tracking-wider'>{yearsInBusiness}+</dt>
                 <dd className='text-white mb-2 sm:mb-0'>Years In Business</dd>
               </div>
-              <div className='flex flex-col items-center justify-center'>
-                <dt className='mb-2 text-3xl text-white sm:text-5xl font-bebas tracking-wider'>{industriesServed}+</dt>
-                <dd className='text-white mb-2 sm:mb-0'>Industries Served</dd>
-              </div>
             </dl>
           </div>
         </section>
