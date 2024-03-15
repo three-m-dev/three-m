@@ -10,6 +10,8 @@ export { default as Services } from './Services';
 export { default as TermsAndConditions } from './TermsAndConditions';
 
 // Admin
-export { default as AccountManager } from './dashboard/AccountManager';
-export { default as BulletinManager } from './dashboard/BulletinManager';
-export { default as Login } from './dashboard/Login';
+export { default as DashboardAdmin } from './dashboard/Admin';
+export { default as DashboardBulletin } from './dashboard/Bulletin';
+export { default as DashboardCareers } from './dashboard/Careers';
+export { default as DashboardHome } from './dashboard/Home';
+export { default as DashboardLogin } from './dashboard/Login';

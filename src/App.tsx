@@ -2,11 +2,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
   About,
   Bulletin,
-  BulletinManager,
   Careers,
   Contact,
+  DashboardAdmin,
+  DashboardBulletin,
+  DashboardHome,
+  DashboardLogin,
   Home,
-  Login,
   NotFound,
   PrivacyPolicy,
   Services,
@@ -46,11 +48,23 @@ const App = () => {
         />
         <Route
           path='/dashboard/login'
-          element={<Login />}
+          element={<DashboardLogin />}
+        />
+        <Route
+          path='/dashboard'
+          element={<DashboardHome />}
+        />
+        <Route
+          path='/dashboard/admin'
+          element={<DashboardAdmin />}
         />
         <Route
           path='/dashboard/bulletin'
-          element={<BulletinManager />}
+          element={<DashboardBulletin />}
+        />
+        <Route
+          path='/dashboard/bulletin'
+          element={<DashboardBulletin />}
         />
         <Route
           path='/privacy-policy'

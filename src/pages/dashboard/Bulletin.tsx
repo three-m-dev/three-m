@@ -1,6 +1,6 @@
 import { Layout } from '../../components';
 
-const BulletinManager = () => {
+const Bulletin = () => {
   return (
     <Layout>
       <></>
@@ -8,4 +8,4 @@ const BulletinManager = () => {
   );
 };
 
-export default BulletinManager;
+export default Bulletin;
