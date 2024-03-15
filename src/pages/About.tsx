@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Footer, Navbar } from '../components';
-import PDFModal from '../components/PDFModal';
-import pdf from '/proven-process.pdf';
 
 const values = [
   {
