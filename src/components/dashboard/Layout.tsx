@@ -6,12 +6,6 @@ type LayoutProps = {
   children?: React.ReactNode;
 };
 
-const sampleUser = {
-  fullName: 'John Doe',
-  initials: 'JD',
-  id: '1',
-};
-
 const Layout = ({ children }: LayoutProps) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);

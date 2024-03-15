@@ -93,7 +93,7 @@ Three M Tool & Machine was established in Detroit's Brightmoor neighborhood by t
 
 const About = () => {
   const [yearsInBusiness, setYearsInBusiness] = useState<number>(0);
-  const [industriesServed, setIndustriesServed] = useState<number>(0);
+
   const [activeEvent, setActiveEvent] = useState<number | null>(null);
 
   const yearsAgo = (date: string): number => {
@@ -124,7 +124,6 @@ const About = () => {
 
   useEffect(() => {
     animateValue(yearsAgo('1971-07-01'), setYearsInBusiness);
-    animateValue(25, setIndustriesServed);
   }, []);
 
   const openEvent = (index: number) => {
