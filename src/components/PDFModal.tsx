@@ -1,8 +1,7 @@
 /* eslint-disable */
-
 import { useState } from 'react';
 
-const PDFModal = ({ pdf }) => {
+const PDFModal = ({ pdf }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => setIsOpen(!isOpen);
