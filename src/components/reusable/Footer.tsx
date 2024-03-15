@@ -17,6 +17,15 @@ const Footer = () => {
                 alt='Three M Logo'
               />
             </Link>
+            <div className='text-gray-200 mt-2 flex flex-col gap-3'>
+              <a href='mailto:sales@three-m.com'>sales@three-m.com</a>
+              <a href='tel:2483631555'>(248) 636-1555</a>
+              <a
+                href='https://www.google.com/maps/place/Three+M+Tool+and+Machine,+Inc./@42.577088,-83.4467241,17z/data=!3m1!4b1!4m6!3m5!1s0x8824a4ea968cf125:0x8e4c1d7fddc834d6!8m2!3d42.5770841!4d-83.4441492!16s%2Fg%2F1tgdtrtz?entry=ttu'
+                target='blank'>
+                8155 Richardson Rd, Commerce Twp, MI, 48390
+              </a>
+            </div>
             {/* <Link to=''>
               <img src='/images/iso_9001_2015.png' className='h-20'></img>
             </Link> */}

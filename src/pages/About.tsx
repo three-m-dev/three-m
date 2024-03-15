@@ -171,6 +171,18 @@ const About = () => {
           </div>
         </section>
 
+        {/* Mission Statement */}
+        <section className='bg-white'>
+          <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
+            <div className='mx-auto max-w-screen-sm text-center'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Mission Statement</h2>
+              <p className='font-light text-gray-500 sm:text-xl'>
+                Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Core Values */}
         <section className='py-8 md:py-16'>
           <div className='mx-auto max-w-screen-xl px-4'>
@@ -199,18 +211,6 @@ const About = () => {
                   </ul>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Mission Statement */}
-        <section className='bg-white'>
-          <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-            <div className='mx-auto max-w-screen-sm text-center'>
-              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Mission Statement</h2>
-              <p className='font-light text-gray-500 sm:text-xl'>
-                Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
-              </p>
             </div>
           </div>
         </section>
