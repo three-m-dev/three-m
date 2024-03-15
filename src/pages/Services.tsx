@@ -111,6 +111,7 @@ const Services = () => {
               <ServiceCard
                 key={index}
                 title={service.title}
+                description={service.description}
                 path={service.path}
                 imageOne={service.imageOne}
                 imageTwo={service.imageTwo}
