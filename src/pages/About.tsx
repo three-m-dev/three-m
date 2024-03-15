@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Footer, Navbar } from '../components';
 import PDFModal from '../components/PDFModal';
-import pdf from '/iso-9001-2015-certificate-of-registration.pdf';
+import pdf from '/proven-process.pdf';
 
 const values = [
   {
@@ -172,14 +172,34 @@ const About = () => {
           <PDFModal pdf={pdf} />
         </div>
 
-        {/* Mission Statement */}
+        {/* Proven Process */}
         <section className='bg-white'>
           <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-            <div className='mx-auto max-w-screen-sm text-center'>
-              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Mission Statement</h2>
+            <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Proven Process</h2>
               <p className='font-light text-gray-500 sm:text-xl'>
                 Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
               </p>
+            </div>
+
+            <div className='bg-red-500 w-full h-max'>
+              <img src='/images/three-m-proven-process - Copy.png' />
+            </div>
+          </div>
+        </section>
+
+        {/* Proven Process */}
+        <section className='bg-white'>
+          <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
+            <div className='mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center'>
+              <h2 className='mb-4 text-3xl text-gray-900 sm:text-5xl font-bebas tracking-wider'>Proven Process</h2>
+              <p className='font-light text-gray-500 sm:text-xl'>
+                Improving lives by honoring, strengthening and advancing the great tradition of American manufacturing.
+              </p>
+            </div>
+
+            <div className='bg-red-500 w-full h-max'>
+              <img src='/images/three-m-proven-process.png' />
             </div>
           </div>
         </section>
@@ -216,7 +236,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* Proven Process */}
+        {/* Mission Statement */}
         <section className='bg-white'>
           <div className='gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'>
             <div className='font-light text-gray-500 sm:text-lg text-center'>

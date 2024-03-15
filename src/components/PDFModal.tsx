@@ -15,10 +15,9 @@ const PDFModal = ({ pdf }: any) => {
       </button>
 
       {isOpen && (
-        <div className='fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-[98]'>
+        <div className='h-screen fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto sm:h-full w-full z-[98]'>
           <div className='relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-md bg-white'>
-            <div className='flex justify-between items-center'>
-              <h4 className='text-lg font-medium text-gray-900'>PDF Viewer</h4>
+            <div className='flex justify-end items-center'>
               <button
                 className='bg-transparent text-gray-400'
                 onClick={toggleModal}>
@@ -28,8 +27,7 @@ const PDFModal = ({ pdf }: any) => {
             <div className='mt-2'>
               <iframe
                 src={pdf}
-                width='100%'
-                height='600px'
+                className='w-[100%] h-[80vh]'
                 style={{ border: 'none' }}></iframe>
             </div>
           </div>
