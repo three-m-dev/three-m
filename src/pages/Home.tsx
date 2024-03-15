@@ -246,7 +246,7 @@ const Home = () => {
                 unmatched quality and efficiency.
               </p>
             </div>
-            <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 gap-4'>
               {services.map((service, index) => (
                 <Link
                   to={'/services/' + formatToKebabCase(service.title)}
@@ -420,7 +420,7 @@ const Home = () => {
                 backgroundImage: `url('/images/5.png')`,
               }}>
               <div className='absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center'>
-                <span className='text-white text-3xl sm:text-5xl uppercase font-bebas tracking-wider'>Services</span>
+                <span className='text-white text-3xl lg:text-5xl uppercase font-bebas tracking-wider'>Services</span>
               </div>
             </div>
           </Link>
@@ -431,7 +431,7 @@ const Home = () => {
               className='w-full h-full bg-cover bg-center flex justify-center items-center relative'
               style={{ backgroundImage: `url('/images/4.png')` }}>
               <div className='absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center'>
-                <span className='text-white text-3xl sm:text-5xl uppercase font-bebas tracking-wider'>Careers</span>
+                <span className='text-white text-3xl lg:text-5xl uppercase font-bebas tracking-wider'>Careers</span>
               </div>
             </div>
           </Link>
@@ -442,7 +442,7 @@ const Home = () => {
               className='w-full h-full bg-cover bg-center flex justify-center items-center relative'
               style={{ backgroundImage: `url('/images/three-m-building.jpg')` }}>
               <div className='absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center'>
-                <span className='text-white text-3xl sm:text-5xl uppercase font-bebas tracking-wider'>Contact</span>
+                <span className='text-white text-3xl lg:text-5xl uppercase font-bebas tracking-wider'>Contact</span>
               </div>
             </div>
           </Link>

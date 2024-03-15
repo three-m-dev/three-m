@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className='flex md:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse'>
               <Link
                 to='/contact'
-                className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded-md px-3 py-1.5 text-center flex items-center uppercase font-semibold'>
+                className='text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition ease-in-out duration-300 focus:outline-none rounded-md px-3 py-1.5 text-center items-center uppercase font-semibold hidden lg:flex'>
                 Contact
               </Link>
               <button
@@ -150,6 +150,14 @@ const Navbar = () => {
                 onClick={toggleMobileNavbar}
                 className='text-2xl'>
                 Bulletin
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/contact'
+                onClick={toggleMobileNavbar}
+                className='text-2xl'>
+                Contact
               </Link>
             </li>
           </ul>

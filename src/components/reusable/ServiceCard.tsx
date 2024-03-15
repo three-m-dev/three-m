@@ -26,7 +26,7 @@ const Card = (props: CardProps) => {
           className='absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100'
         />
 
-        <h3 className='text-white text-3xl sm:text-4xl uppercase font-bebas tracking-wider absolute text-center z-50'>
+        <h3 className='text-white text-3xl lg:text-4xl uppercase font-bebas tracking-wider absolute text-center z-50'>
           {props.title}
         </h3>
       </div>
