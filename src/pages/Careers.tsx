@@ -27,138 +27,6 @@ const careers: ICareer[] = [
   //   createdAt: '2024-01-15',
   //   updatedAt: '2024-01-20',
   // },
-  // {
-  //   id: '1',
-  //   title: 'Software Engineer',
-  //   description: 'Develop and maintain software solutions.',
-  //   company: 'Tech Innovations Inc.',
-  //   location: 'New York, NY',
-  //   department: 'Engineering',
-  //   employmentType: 'Full-time',
-  //   startingAt: '2024-04-01',
-  //   compensationType: 'Salary',
-  //   requirements: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     '3+ years of software development experience',
-  //   ],
-  //   qualifications: ['Proficient in JavaScript and Python', 'Experience with React and Node.js'],
-  //   benefits: ['Health, dental, and vision insurance', '401(k) plan with company match', 'Unlimited paid time off'],
-  //   schedule: ['Monday to Friday', '9am to 5pm'],
-  //   status: 'Open',
-  //   applicantCount: 25,
-  //   createdAt: '2024-01-15',
-  //   updatedAt: '2024-01-20',
-  // },
-  // {
-  //   id: '1',
-  //   title: 'Software Engineer',
-  //   description: 'Develop and maintain software solutions.',
-  //   company: 'Tech Innovations Inc.',
-  //   location: 'New York, NY',
-  //   department: 'Engineering',
-  //   employmentType: 'Full-time',
-  //   startingAt: '2024-04-01',
-  //   compensationType: 'Salary',
-  //   requirements: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     '3+ years of software development experience',
-  //   ],
-  //   qualifications: ['Proficient in JavaScript and Python', 'Experience with React and Node.js'],
-  //   benefits: ['Health, dental, and vision insurance', '401(k) plan with company match', 'Unlimited paid time off'],
-  //   schedule: ['Monday to Friday', '9am to 5pm'],
-  //   status: 'Open',
-  //   applicantCount: 25,
-  //   createdAt: '2024-01-15',
-  //   updatedAt: '2024-01-20',
-  // },
-  // {
-  //   id: '1',
-  //   title: 'Software Engineer',
-  //   description: 'Develop and maintain software solutions.',
-  //   company: 'Tech Innovations Inc.',
-  //   location: 'New York, NY',
-  //   department: 'Engineering',
-  //   employmentType: 'Full-time',
-  //   startingAt: '2024-04-01',
-  //   compensationType: 'Salary',
-  //   requirements: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     '3+ years of software development experience',
-  //   ],
-  //   qualifications: ['Proficient in JavaScript and Python', 'Experience with React and Node.js'],
-  //   benefits: ['Health, dental, and vision insurance', '401(k) plan with company match', 'Unlimited paid time off'],
-  //   schedule: ['Monday to Friday', '9am to 5pm'],
-  //   status: 'Open',
-  //   applicantCount: 25,
-  //   createdAt: '2024-01-15',
-  //   updatedAt: '2024-01-20',
-  // },
-  // {
-  //   id: '1',
-  //   title: 'Software Engineer',
-  //   description: 'Develop and maintain software solutions.',
-  //   company: 'Tech Innovations Inc.',
-  //   location: 'New York, NY',
-  //   department: 'Engineering',
-  //   employmentType: 'Full-time',
-  //   startingAt: '2024-04-01',
-  //   compensationType: 'Salary',
-  //   requirements: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     '3+ years of software development experience',
-  //   ],
-  //   qualifications: ['Proficient in JavaScript and Python', 'Experience with React and Node.js'],
-  //   benefits: ['Health, dental, and vision insurance', '401(k) plan with company match', 'Unlimited paid time off'],
-  //   schedule: ['Monday to Friday', '9am to 5pm'],
-  //   status: 'Open',
-  //   applicantCount: 25,
-  //   createdAt: '2024-01-15',
-  //   updatedAt: '2024-01-20',
-  // },
-  // {
-  //   id: '1',
-  //   title: 'Software Engineer',
-  //   description: 'Develop and maintain software solutions.',
-  //   company: 'Tech Innovations Inc.',
-  //   location: 'New York, NY',
-  //   department: 'Engineering',
-  //   employmentType: 'Full-time',
-  //   startingAt: '2024-04-01',
-  //   compensationType: 'Salary',
-  //   requirements: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     '3+ years of software development experience',
-  //   ],
-  //   qualifications: ['Proficient in JavaScript and Python', 'Experience with React and Node.js'],
-  //   benefits: ['Health, dental, and vision insurance', '401(k) plan with company match', 'Unlimited paid time off'],
-  //   schedule: ['Monday to Friday', '9am to 5pm'],
-  //   status: 'Open',
-  //   applicantCount: 25,
-  //   createdAt: '2024-01-15',
-  //   updatedAt: '2024-01-20',
-  // },
-  // {
-  //   id: '1',
-  //   title: 'Software Engineer',
-  //   description: 'Develop and maintain software solutions.',
-  //   company: 'Tech Innovations Inc.',
-  //   location: 'New York, NY',
-  //   department: 'Engineering',
-  //   employmentType: 'Full-time',
-  //   startingAt: '2024-04-01',
-  //   compensationType: 'Salary',
-  //   requirements: [
-  //     "Bachelor's degree in Computer Science or related field",
-  //     '3+ years of software development experience',
-  //   ],
-  //   qualifications: ['Proficient in JavaScript and Python', 'Experience with React and Node.js'],
-  //   benefits: ['Health, dental, and vision insurance', '401(k) plan with company match', 'Unlimited paid time off'],
-  //   schedule: ['Monday to Friday', '9am to 5pm'],
-  //   status: 'Open',
-  //   applicantCount: 25,
-  //   createdAt: '2024-01-15',
-  //   updatedAt: '2024-01-20',
-  // },
 ];
 
 const getTimePassed = (dateString: string): string => {
@@ -245,7 +113,7 @@ const CareerList = () => {
   const renderCareers = () => {
     if (loading) {
       return (
-        <div className='w-full mt-8 min-h-[112px] flex items-center justify-center'>
+        <div className='w-full mt-8 min-h-[124px] sm:min-h-[112px] flex items-center justify-center'>
           <Loading />;
         </div>
       );
@@ -258,7 +126,7 @@ const CareerList = () => {
             <a
               href='https://www.indeed.com/cmp/Three-M-Tool-&-Machine'
               target='blank'
-              className='text-blue-600 hover:underline'>
+              className='text-primary hover:underline font-bold'>
               Indeed page
             </a>{' '}
             or submit your resume directly for future opportunities.
@@ -383,6 +251,7 @@ const CareerList = () => {
         </div>
       </section>
 
+      {/* Resume Submission */}
       <section className='bg-white'>
         <div className='mx-auto max-w-screen-xl px-4 lg:px-6 py-8 md:py-16'>
           <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>

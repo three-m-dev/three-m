@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useCreateApplication } from '../../hooks/useCreateApplication';
-import { ICareerListing } from '../../interfaces';
+import { useCreateApplication } from '../hooks/useCreateApplication';
+import { ICareerListing } from '../interfaces';
 
 interface Props {
   careerListings: ICareerListing[];
