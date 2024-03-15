@@ -16,7 +16,7 @@ const PDFModal = ({ pdf }) => {
       </button>
 
       {isOpen && (
-        <div className='fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full'>
+        <div className='fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-[98]'>
           <div className='relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-md bg-white'>
             <div className='flex justify-between items-center'>
               <h4 className='text-lg font-medium text-gray-900'>PDF Viewer</h4>
