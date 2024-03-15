@@ -6,8 +6,10 @@ import {
   Contact,
   DashboardAdmin,
   DashboardBulletin,
+  DashboardCareers,
   DashboardHome,
   DashboardLogin,
+  DashboardNotFound,
   Home,
   NotFound,
   PrivacyPolicy,
@@ -21,6 +23,7 @@ const App = () => {
     <BrowserRouter>
       <ScrollToTop />
 
+      {/* Main */}
       <Routes>
         <Route
           path='/'
@@ -35,7 +38,7 @@ const App = () => {
           element={<Services />}
         />
         <Route
-          path='/careers/*'
+          path='/careers'
           element={<Careers />}
         />
         <Route
@@ -46,6 +49,20 @@ const App = () => {
           path='/contact'
           element={<Contact />}
         />
+        <Route
+          path='/privacy-policy'
+          element={<PrivacyPolicy />}
+        />
+        <Route
+          path='/terms-and-conditions'
+          element={<TermsAndConditions />}
+        />
+        <Route
+          path='*'
+          element={<NotFound />}
+        />
+
+        {/* Dashboard */}
         <Route
           path='/dashboard/login'
           element={<DashboardLogin />}
@@ -63,20 +80,12 @@ const App = () => {
           element={<DashboardBulletin />}
         />
         <Route
-          path='/dashboard/bulletin'
-          element={<DashboardBulletin />}
+          path='/dashboard/careers'
+          element={<DashboardCareers />}
         />
         <Route
-          path='/privacy-policy'
-          element={<PrivacyPolicy />}
-        />
-        <Route
-          path='/terms-and-conditions'
-          element={<TermsAndConditions />}
-        />
-        <Route
-          path='*'
-          element={<NotFound />}
+          path='/dashboard/*'
+          element={<DashboardNotFound />}
         />
       </Routes>
     </BrowserRouter>

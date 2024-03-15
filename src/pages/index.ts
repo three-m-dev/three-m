@@ -15,3 +15,4 @@ export { default as DashboardBulletin } from './dashboard/Bulletin';
 export { default as DashboardCareers } from './dashboard/Careers';
 export { default as DashboardHome } from './dashboard/Home';
 export { default as DashboardLogin } from './dashboard/Login';
+export { default as DashboardNotFound } from './dashboard/NotFound';
