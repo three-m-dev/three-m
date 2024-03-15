@@ -5,30 +5,41 @@ import { useState } from 'react';
 
 const slides = [
   {
-    title: 'Innovation in Manufacturing',
-    cta: 'Learn More',
+    title: 'Seamless Production Flow',
+    cta: 'Our Services',
     url: '/services',
-    image: 'https://as1.ftcdn.net/v2/jpg/03/26/28/70/1000_F_326287003_HLZJZhT7l4v76OaqfMd1rjQDHldb0Wm8.jpg',
+    urlTarget: '',
+    image: '/images/37.png',
+    imagePosition: 'object-bottom',
     alt: '',
     align: 'left',
   },
   {
-    title: 'Seamless Production Flow',
-    cta: 'Learn More',
-    url: '/services',
-    image: 'https://as2.ftcdn.net/v2/jpg/02/76/46/27/1000_F_276462792_C2d0t1ajrCdoBLG8jqXmqS9kqNqrbEbe.jpg',
-    imagePosition: 'center',
+    title: 'Take a look inside our shop',
+    cta: 'Virtual Tour',
+    url: 'https://my.matterport.com/show/?m=Df9MzYKA3zF',
+    urlTarget: 'blank',
+    image: '/images/36.png',
     alt: '',
     align: 'right',
   },
   {
-    title: 'Quality Assurance in Every Build',
+    title: '*QUALITY LINE HERE*',
     cta: 'Learn More',
     url: '/services',
-    image: '/images/caliper-on-print.jpg',
-    imagePosition: 'object-center',
+    urlTarget: '',
+    image: '/images/40.jpg',
     alt: '',
     align: 'left',
+  },
+  {
+    title: 'Join our dedicated team',
+    cta: 'Career Openings',
+    url: '/careers',
+    urlTarget: '',
+    image: '/images/41.jpg',
+    alt: '',
+    align: 'right',
   },
 ];
 
@@ -157,18 +168,19 @@ const Home = () => {
             alt={slides[slideIndex].alt}
             className={`absolute z-0 h-full w-full object-cover ` + slides[slideIndex].imagePosition}
           />
-          <div className='absolute z-10 h-full w-full bg-black opacity-60'></div>
+          <div className='absolute z-10 h-full w-full bg-black opacity-30'></div>
 
-          <div className='relative z-20 mx-auto flex w-full max-w-screen-xl justify-center lg:justify-start'>
+          <div className='relative z-20 mx-auto flex w-full justify-center lg:justify-start h-full items-center pt-60 md:pt-0'>
             <div
               className={`flex flex-col items-center gap-8 sm:w-2/5 ${
                 slides[slideIndex].align === 'right' && 'lg:ml-auto'
               } ${slides[slideIndex].align === 'center' && 'lg:mx-auto'}`}>
-              <h1 className='text-center font-bebas text-3xl md:text-5xl uppercase tracking-wider text-white'>
+              <h1 className='text-center font-bebas text-3xl sm:text-5xl uppercase tracking-wider text-white max-w-sm'>
                 {slides[slideIndex].title}
               </h1>
               <Link
                 to={slides[slideIndex].url}
+                target={slides[slideIndex].urlTarget}
                 className='rounded border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:border-primary hover:bg-primary'>
                 {slides[slideIndex].cta}
               </Link>

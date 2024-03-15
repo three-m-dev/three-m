@@ -1,5 +1,11 @@
+import { Layout } from '../../components';
+
 const BulletinManager = () => {
-  return <div>BulletinManager</div>;
+  return (
+    <Layout>
+      <></>
+    </Layout>
+  );
 };
 
 export default BulletinManager;
