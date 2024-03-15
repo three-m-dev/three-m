@@ -24,9 +24,9 @@ const BlogContent = () => {
   ) : null;
 };
 
-const BulletinGrid = () => {};
+// const BulletinGrid = () => {};
 
-const BulletinContent = () => {};
+// const BulletinContent = () => {};
 
 const Bulletin = () => {
   return (
