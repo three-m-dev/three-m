@@ -288,7 +288,7 @@ const Home = () => {
               />
               <img
                 className='mt-4 w-full h-96 object-cover lg:mt-10 rounded-md shadow-md'
-                src='https://www.shutterstock.com/shutterstock/photos/1432126148/display_1500/stock-photo-milling-tools-in-cnc-machine-chop-1432126148.jpg'
+                src='/images/chips.jpg'
                 alt='office content 2'
               />
             </div>

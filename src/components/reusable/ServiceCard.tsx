@@ -14,7 +14,7 @@ const Card = (props: CardProps) => {
       to={props.path}
       className='group block overflow-hidden bg-gray-200 shadow-lg rounded-md'>
       <div className='relative aspect-square flex items-center justify-center overflow-clip transition-all'>
-        <div className='absolute h-full w-full bg-black z-40 opacity-30 group-hover:opacity-60 transition-all'></div>
+        <div className='absolute h-full w-full bg-black z-40 opacity-30 transition-all'></div>
         <img
           src={props.imageOne}
           alt=''
