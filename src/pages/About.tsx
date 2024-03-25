@@ -113,7 +113,7 @@ const About = () => {
 
 	const animateValue = (target: number, setDisplayValue: React.Dispatch<React.SetStateAction<number>>) => {
 		const duration = 1000;
-		let startValue = 0;
+		const startValue = 0;
 		const stepTime = 20;
 		const steps = duration / stepTime;
 		const valueIncrement = target / steps;
@@ -154,7 +154,7 @@ const About = () => {
 			<div className="mt-16">
 				{/* Banner */}
 				<section className="bg-white mt-16 h-[30vh] md:h-[65vh] relative">
-					<img src="/images/family-photo.jpg" className="absolute left-0 w-full h-full object-cover object-top z-0" />
+					<img src="/assets/images/family-photo.jpg" className="absolute left-0 w-full h-full object-cover object-top z-0" />
 					<div className="absolute z-10 h-full w-full bg-black opacity-0"></div>
 				</section>
 
